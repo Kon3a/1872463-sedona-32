@@ -44,14 +44,98 @@
           </li>
         </ul>
       </nav>
-      <main class="main-hotels">Здесь будет основное содержание страницы</main>
+    </header>
+      <main class="main-inner">        
+        <section class="filter">
+          <h1 class="filter-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"><img src="#"></a><!-- Нужно здесь размечать картинку? Она же скорее всего декоративная -->
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul> 
+        <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
+        <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-hotels-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="pool" checked>              
+              <span class="control-label">Бассейн</span>
+            </label>
+             </li>
+             <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="parking" checked>              
+              <span class="control-label">Парковка</span>
+            </label>
+            </li>
+            <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="wifi">              
+              <span class="control-label">Wi-Fi</span>
+            </label>
+          </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-hotels-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="pool" checked>              
+              <span class="control-label">Гостиница </span>
+            </label>
+             </li>
+             <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="parking">              
+              <span class="control-label">Бассейн</span>
+            </label>
+            </li>
+            <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="wifi">              
+              <span class="control-label">Апартаменты</span>
+            </label>
+          </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-hotels-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <button class="range-toggle toggle-min" type="button">
+              <span class="visually-hidden">Изменить минимальную стоимость.</span>
+            </button>
+            <button class="range-toggle toggle-max" type="button">
+              <span class="visually-hidden">Изменить максимальную стоимость.</span>
+            </button>
+
+            <label class="catalog-filter-label">
+              <input class="catalog-filter-input" type="number" name="min-price" placehlider="0" value="от">
+            </label>
+
+            <label class="catalog-filter-label">
+              <input class="catalog-filter-input" type="number" name="max-price" placehlider="9000" value="до">
+            </label>
+          </fieldset>
+
+          <ul>
+          <li>
+           <button class="button apply" type="submit">Применить</button>
+          </li>
+          <li>
+           <button class="button reset" type="submit">Сбросить</button>
+          </li>        
+         </ul>
+        </form>
+          
+       </section>
+      </main>
       <section class="subscribe">
-        <!-- Добавил к заголовку и абзацу класс page-hotels 
-            так как сменился цвет шрифта с чёрного на белый.
-            И поменялся бекграунд
-            В отличии от такой же формы на главной странице
-         -->
-        <h2 class="subscribe-title page-hotels">Подпишитесь на рассылку</h2>
+       <h2 class="subscribe-title page-hotels">Подпишитесь на рассылку</h2>
         <p class="subscribe-description page-hotels">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
