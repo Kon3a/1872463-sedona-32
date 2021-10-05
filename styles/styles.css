@@ -2,7 +2,7 @@
     font-family: "PTSans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
   
@@ -10,11 +10,68 @@
     font-family: "PTSans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
   
 body {
-    font-family: "PTSans, sans-serif";
+    font-family: "PTSans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 400;
+    color: #333333;
+    background-color: #FFFFFF;
 }
-  
+
+.page-header {
+    color: #000000;
+    font-size: 20px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 700;
+}
+.main-index {
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.tagline {
+    text-align: center;
+}
+.tagline-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tagline-description {
+    line-height: 36px;
+}
+
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.advantages-title-white {
+    color: #ffffff;
+}
+
+.advantages-number, .advantages-description {
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.advantages-number-white, .advantages-description-white {
+    color: #ffffff;
+}
