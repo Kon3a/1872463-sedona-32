@@ -90,7 +90,16 @@ body {
     color: #ffffff;
 }
 
+/* Навигация */
 
+.navigation-button {
+    font-size: 16px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 
 .subscribe {
     width: 1200px;
@@ -121,25 +130,10 @@ body {
     padding-top: 15px;
 }
 
-.subscribe-form {
-
-}
-
-.footer-contakt-tel-link {
-    font-family: "PTSans", sans-serif;
-    font-size: 40px;
-    line-height: 40px;
-    font-style: normal;
-    font-weight: 400;
-    color: #000000;
-    text-decoration: none;
-}
-
 .main-inner {
     background-image: url("../images/catalog-background.jpg");
     background-size: 100% auto;
-    background-repeat: no-repeat;    
-
+    background-repeat: no-repeat;
 }
 
 .page-title {
@@ -163,7 +157,7 @@ body {
 }
 
 .filter-hotels {
-    background-color: black;
+    background-color: black; /* Временно установил background-color что бы видеть на его фоне белый текст */
 }
 
 .catalog-filter-title {
@@ -210,4 +204,24 @@ body {
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.button-load-more {
+    font-family: "PTSans", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-contakt-tel-link {
+    font-family: "PTSans", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
 }

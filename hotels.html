@@ -17,9 +17,7 @@
                   <a class="navigation-link" href="#">О Седоне</a>
                </li>
                <li class="navigation-item">
-                  <!-- Активная ссылка / пункт меню меню. Класс navigation-link-current Begin --> 
                   <a class="navigation-link navigation-link-current" href="#">Гостиницы</a> 
-                  <!-- Активная ссылка / пункт меню меню. Класс navigation-link-current End --> 
                </li>
             </ul>
             <!-- Основная навигация End --> 
@@ -40,7 +38,7 @@
                   </a>
                </li>
                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Хочу сюда</a>
+                  <button class="button navigation-button">Хочу сюда</button>
                </li>
             </ul>
          </nav>
@@ -141,13 +139,19 @@
             </form>
             <ul class="list-result"></ul>
                <li class="list-result-item">
-                  <img src="images/mode-list.svg" alt="Список" width="16" height="14"/>
+                  <button class="button result-type">
+                     <img src="images/mode-list.svg" alt="Список" width="16" height="14"/>
+                  </button>
                </li>
                <li class="list-result-item">
-                  <img src="images/mode-slideshow.svg" alt="Миниатюры" width="16" height="14"/>
+                  <button class="button result-type">
+                     <img src="images/mode-slideshow.svg" alt="Миниатюры" width="16" height="14"/>
+                  </button>
                </li>
                <li class="list-result-item">
-                  <img src="images/mode-tile.svg" alt="Подробный список" width="16" height="14"/>
+                  <button class="button result-type">
+                     <img src="images/mode-tile.svg" alt="Подробный список" width="16" height="14"/>
+                  </button>
                </li>
             </ul>
             <ul class="hotel-list">
@@ -245,7 +249,7 @@
                   </ul>
                </li>
             </ul>
-            <a href="#" class="hotel-card-button load-more">Загрузить еще</a>
+            <button class="button-load-more">Загрузить еще</button>
             <ul class="pagination">
                <li class="pagination-item">
                   <a class="pagination-link pagination-current">1</a>
