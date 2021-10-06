@@ -91,11 +91,6 @@ body {
     background-color: #83B3D3;
 }
 
-.button-rating {
-    font-weight: 400;
-    background-color: #f2f2f2;
-}
-
 .page-header {
     font-size: 20px;
     font-weight: 700;
@@ -105,7 +100,8 @@ body {
 /* Навигация */
 .navigation-link {
     text-decoration: none;
-}
+    color: #000000;
+    }
 
 .welcome {
     width: 1200px;
@@ -130,7 +126,7 @@ body {
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-
+    color: #000000;
 }
 
 .tagline-description {
@@ -162,6 +158,14 @@ body {
 
 .advantages-number-white, .advantages-description-white {
     color: #ffffff;
+}
+
+.advantages-additional-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 .hotel-search {
@@ -269,6 +273,13 @@ body {
 .amount-hotels {
     font-size: 18px;
     line-height: 23px;    
+}
+
+.rating {
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
 }
 
 .pagination-link {
