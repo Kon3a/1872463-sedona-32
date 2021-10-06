@@ -130,25 +130,26 @@
                </ul>
             </form>
             <form class="sorting-type">
+               <p class="result">Найдено гостиниц: 38</p>
                <label class="visually-hidden" for="sorting">Сортировка</label>
                <select class="select-control" id="sorting" name="sorting">
+                  <option value="cheap">Сначала дешёвые</option>
                   <option value="expensive">Сначала дорогие</option>
                   <option value="popular">Сначала популярные</option>
-                  <option value="cheap">Сначала дешёвые</option>
                </select>
                <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
             </form>
-            <p class="result">Найдено гостиниц: 38</p>
-            <a href="#" class="button">
-               <img src="images/mode-list 1.svg" alt="Показать гостиницы списком" width="16" height="14"/>
-            <span class="visually-hidden">Показать список</span>
-            </a>
-            <a href="#" class="button">
-            <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button">
-            <span class="visually-hidden">Показать слайды</span>
-            </a>
+            <ul class="list-result"></ul>
+               <li class="list-result-item">
+                  <img src="images/mode-list.svg" alt="Список" width="16" height="14"/>
+               </li>
+               <li class="list-result-item">
+                  <img src="images/mode-slideshow.svg" alt="Миниатюры" width="16" height="14"/>
+               </li>
+               <li class="list-result-item">
+                  <img src="images/mode-tile.svg" alt="Подробный список" width="16" height="14"/>
+               </li>
+            </ul>
             <ul class="hotel-list">
                <li class="hotel-list-item">
                   <a class="hotel-card-img-link" href="#">
