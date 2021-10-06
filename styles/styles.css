@@ -63,19 +63,23 @@ body {
 }
 
 .tagline-title {
+    margin-top: 63px;
+}
+
+.title-h2 {
     font-size: 30px;
     line-height: 36px;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 63px;
+
 }
 
 .tagline-description {
-    font-size: 22px;
+   /* font-size: 22px;
     line-height: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400; */
     margin-top: 23px;
 }
 
@@ -101,6 +105,10 @@ body {
 
 .advantages-number-white, .advantages-description-white {
     color: #ffffff;
+}
+
+.hotel-search {
+    text-align: center; 
 }
 
 .subscribe {
