@@ -111,7 +111,7 @@ body {
     width: 1200px;
     height: 485px;
     background:
-    url("../images/welcome.png") no-repeat  371px 51px,
+    url("../images/welcome.svg") no-repeat  371px 51px,
     url("../images/index-background-top-layer.svg") repeat-x 0 428px,
     url("../images/index-background.jpg");   
 }
