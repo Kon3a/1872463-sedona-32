@@ -118,6 +118,7 @@ body {
     font-style: normal;
     font-weight: 700;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .subscribe {
@@ -147,6 +148,16 @@ body {
     font-weight: 400;
     color: #ffffff;
     padding-top: 15px;
+}
+
+.subscribe-form-button {
+    font-family: "PTSans", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .main-inner {
