@@ -40,7 +40,7 @@ body {
 
 .button-navigation {
     color: #ffffff;
-    background-color: #756257;    
+    background-color: #756257;
 }
 
 .button-hotel-search {
@@ -71,7 +71,7 @@ body {
 
 .button-details {
     color: #ffffff;
-    background-color: #756257;
+    background-color: #756257;   
 }
 
 .button-to-favorites {
@@ -86,6 +86,7 @@ body {
 
 .button-load-more {
     font-size: 20px;
+    line-height: 26px;
     color: #ffffff;
     background-color: #83B3D3;
 }
@@ -257,6 +258,9 @@ body {
     line-height: 31px;
     font-weight: 700;
     color: #000000;
+}
+
+.hotel-card-title-link {
     text-decoration: none;
 }
 
