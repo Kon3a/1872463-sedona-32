@@ -38,7 +38,7 @@
                   </a>
                </li>
                <li class="navigation-item">
-                  <button class="button navigation-button">Хочу сюда</button>
+                  <button class="button button-navigation">Хочу сюда!</button>
                </li>
             </ul>
          </nav>
@@ -120,10 +120,10 @@
                </fieldset>
                <ul>
                   <li>
-                     <button class="button filter-apply" type="submit">Применить</button>
+                     <button class="button button-filter-apply" type="submit">Применить</button>
                   </li>
                   <li>
-                     <button class="button filter-reset" type="reset">Сбросить</button>
+                     <button class="button button-filter-reset" type="reset">Сбросить</button>
                   </li>
                </ul>
             </form>
@@ -159,14 +159,14 @@
                   <a class="hotel-card-img-link" href="#">
                   <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Гостиница Amara Resort & Spa" width="180" height="120">
                   </a>
-                  <a class="hotel-card-title-link" href="#">
+                  <a class="hotel-card-title-link" href="#"> 
                      <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                   </a>
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 4000 ₽</span>
-                  <a href="#" class="hotel-card-button details">Подробнее</a>
-                  <a href="#" class="hotel-card-button favorites">В избранное</a>
-                  <span class="hotel-rating ">Рейтинг: 8,5</span>
+                  <button class="button button-details">Подробнее</button>
+                  <button class="button button-to-favorites">В избранное</button>
+                  <button class="button button-rating">Рейтинг: 8,5</button>
                   <ul class="star-list">
                      <li class="star-item">
                         <img class="star-image" src="images/star.svg" alt="Звезда классности отеля" width="18" height="17">
@@ -191,9 +191,9 @@
                   </a>
                   <span class="hotel-card-type">Мотель</span>
                   <span class="hotel-card-price">От 3000 ₽</span>
-                  <a href="#" class="hotel-card-button details">Подробнее</a>
-                  <a href="#" class="hotel-card-button favorites">В избранное</a>
-                  <span class="hotel-rating ">Рейтинг: 8,9</span>
+                  <button class="button button-details">Подробнее</button>
+                  <button class="button button-to-favorites">В избранное</button>
+                  <button class="button button-rating">Рейтинг: 8,9</button>
                   <ul class="star-list">
                      <li class="star-item">
                         <img class="star-image" src="images/star.svg" alt="Звезда классности отеля" width="18" height="17">
@@ -215,9 +215,9 @@
                   </a>
                   <span class="hotel-card-type">Апартаменты</span>
                   <span class="hotel-card-price">От 2000 ₽</span>
-                  <a href="#" class="hotel-card-button details">Подробнее</a>
-                  <a href="#" class="hotel-card-button favorites-active">В избранном</a>
-                  <span class="hotel-rating ">Рейтинг: 9,2</span>
+                  <button class="button button-details">Подробнее</button>
+                  <button class="button button-in-favorites">В избранном</button>
+                  <button class="button button-rating">Рейтинг: 9,2</button>
                   <ul class="star-list">
                      <li class="star-item">
                         <img class="star-image" src="images/star.svg" alt="Звезда классности отеля" width="18" height="17">
@@ -236,9 +236,9 @@
                   </a>
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 3000 ₽</span>
-                  <a href="#" class="hotel-card-button details">Подробнее</a>
-                  <a href="#" class="hotel-card-button favorites">В избранное</a>
-                  <span class="hotel-rating ">Рейтинг: 9,2</span>
+                  <button class="button button-details">Подробнее</button>
+                  <button class="button button-to-favorites">В избранное</button>
+                  <button class="button button-rating">Рейтинг: 9,2</button>
                   <ul class="star-list">
                      <li class="star-item">
                         <img class="star-image" src="images/star.svg" alt="Звезда классности отеля" width="18" height="17">
@@ -249,7 +249,7 @@
                   </ul>
                </li>
             </ul>
-            <button class="button-load-more">Загрузить еще</button>
+            <button class="button button-load-more">Загрузить еще</button>
             <ul class="pagination">
                <li class="pagination-item">
                   <a class="pagination-link pagination-current">1</a>
@@ -264,14 +264,14 @@
                   <a class="pagination-link" href="#">4</a>
                </li>
                <li class="pagination-item">
-                  <a class="pagination-link pagination-next" href="#">...</a>
+                  <a class="pagination-link" href="#">...</a>
                </li>
                <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>
                </li>
             </ul>
-            <form class="amount-hotels">
-               <label for="amount">Сортировка</label>
+            <form class="amount-form">
+               <label for="amount" class="amount-hotels">Гостиниц на странице:</label>
                <select class="amount-control" id="amount" name="amount">
                   <option value="four-hotel">4</option>
                   <option value="three-hotel">3</option>
@@ -281,9 +281,9 @@
                <button class="visually-hidden" type="submit">Выбрать количество гостиниц на странице</button>
             </form>
          </main>
-         <section class="subscribe">
-            <h2 class="subscribe-title page-hotels">Подпишитесь на рассылку</h2>
-            <p class="subscribe-description page-hotels">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+         <section class="subscribe-inner">
+            <h2 class="subscribe-title page-inner">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description page-inner">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <!-- Форма подписки на рассылку Begin -->
             <form
                class="subscribe-form"
@@ -299,7 +299,7 @@
                   placeholder="Ваш e-mail"
                   required
                   />
-               <button class="button subscribe-form-button" type="submit">Подписаться</button>
+               <button class="button button-subscribe-form" type="submit">Подписаться</button>
             </form>
             <!-- Форма подписки на рассылку End --> 
          </section>
@@ -340,7 +340,7 @@
             <!-- Телефон Begin -->
             <section class="footer-contakt-tel">
                <h2 class="visually-hidden">Контактный телефон</h2>
-               <a class="footer-contakt-tel-link" href="tel:+78128121212"> +7 (812) 812-12-12</a>
+               <a class="footer-contakt-tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </section>
             <!-- Телефон End -->
             <section class="html-academy">
