@@ -204,11 +204,11 @@ body {
 }
 
 .subscribe-form-field::placeholder { 
-    opacity: 0.6;    
+    color: rgba(0,0,0, 0.6);
 }
 
 .subscribe-form-field {
-    opacity: 0.6;  
+    color: rgba(0,0,0, 0.6);
 }  
 
 .page-inner {
