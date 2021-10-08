@@ -240,7 +240,7 @@ body {
 }
 
 .filter-hotels {
-    background-color: black; /* Временно установил background-color что бы видеть на его фоне белый текст */
+    background-color: black; 
 }
 
 .catalog-filter-title {
