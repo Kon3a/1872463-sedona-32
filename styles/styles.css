@@ -129,6 +129,11 @@ body {
 .main-container {
     flex-grow: 1;
 }
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
       
 .welcome {
     width: 1200px;
@@ -136,7 +141,9 @@ body {
     background:
     url("../images/welcome.svg") no-repeat  371px 51px,
     url("../images/index-background-top-layer.svg") repeat-x 0 428px,
-    url("../images/index-background.jpg");   
+    url("../images/index-background.jpg");
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;   
 }
 
 .tagline {
@@ -162,7 +169,16 @@ body {
     font-weight: 400;
     margin-top: 23px;
 }
-
+.advantages-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    text-align: center;
+}
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
@@ -170,6 +186,23 @@ body {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+}
+
+.advantages-item-town,
+.advantages-item-bridge {
+    width: 1200px;
+    background-color: #83B3D3;
+}
+
+.advantages-item-area,
+.advantages-item-tourist {
+    width: 400px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road {
+    width: 400px;
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title-white {
@@ -187,7 +220,29 @@ body {
     color: #ffffff;
 }
 
-.advantages-additional-title {
+.advantages-additional-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
+.adv-add-item-housing,
+.adv-add-item-souvenirs {
+    width: 400px;
+    background-color: rgba(131, 179, 211, 0.12);
+    ;
+}
+
+.adv-add-item-food  {
+    width: 400px;
+    background-color: #ffffff;
+}
+
+.advantages-additional-title {    
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
