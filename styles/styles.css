@@ -20,9 +20,9 @@ html {
 
 body {
     margin: 0;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     font-family: "PTSans", sans-serif;
     font-size: 22px;
     line-height: 26px;
@@ -107,8 +107,9 @@ body {
 .navigation {
     display: flex;
     width: 1200px;
-    justify-content: space-around;
     margin: 0 auto;  
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 
 .navigation-list {
@@ -118,6 +119,10 @@ body {
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }  
+
+.navigation-user {
+    text-align: right;
+}
 
 .navigation-link {
     text-decoration: none;
@@ -384,7 +389,35 @@ body {
     color: #000000;
     background-color: #f2f2f2;
 }
-  
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;  
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
+.footer-social {
+    width: 240px;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
+.footer-contakt-tel {
+    width: 720px;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
+.html-academy {
+    width: 240px;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
 .footer-contakt-tel-link {
     font-size: 40px;
     line-height: 40px;
