@@ -302,21 +302,10 @@ body {
     color: #000000;
 }
 
-.main-inner {
+.main-inner-bg {
     background-image: url("../images/catalog-background.jpg");
-    background-size: 100% auto;
+    width: 1200px;    
     background-repeat: no-repeat;
-}
-
-.welcome {
-    width: 1200px;
-    height: 485px;
-    background:
-    url("../images/welcome.svg") no-repeat  371px 51px,
-    url("../images/index-background-top-layer.svg") repeat-x 0 428px,
-    url("../images/index-background.jpg");
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;   
 }
 
 .page-title {
