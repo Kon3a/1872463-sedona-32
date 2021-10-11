@@ -45,7 +45,8 @@
             </ul>
          </nav>
       </header>
-         <main class="main-inner">
+         <main class="main-container main-inner">
+          <div class="page-container">            
             <h1 class="page-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                <li class="breadcrumbs-item">
@@ -60,7 +61,8 @@
                   <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
                </li>
             </ul>
-            <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
+            <!-- временно добавим атрибут hidden, чтобы заголовок не рушил сетку -->
+            <h2 class="visually-hidden" hidden>Фильтр выбора гостиниц</h2>                   
             <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="filter-hotels-group">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -129,7 +131,7 @@
                      <button class="button button-filter-reset" type="reset">Сбросить</button>
                   </li>
                </ul>
-            </form>
+            </form>            
             <form class="sorting-type">
                <p class="result">Найдено гостиниц: 38</p>
                <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -157,6 +159,7 @@
                   </button>
                </li>
             </ul>
+            
             <ul class="hotel-list">
                <li class="hotel-list-item">
                   <a class="hotel-card-img-link" href="#">
@@ -251,7 +254,7 @@
                      </li>
                   </ul>
                </li>
-            </ul>
+            </ul>         
             <button class="button button-load-more">Загрузить еще</button>
             <ul class="pagination">
                <li class="pagination-item">
@@ -283,6 +286,7 @@
                </select>
                <button class="visually-hidden" type="submit">Выбрать количество гостиниц на странице</button>
             </form>
+          </div>  
          </main>
          <section class="subscribe-inner">
             <h2 class="subscribe-title page-inner">Подпишитесь на рассылку</h2>
