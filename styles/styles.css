@@ -158,8 +158,7 @@ body {
 .main-container {
     flex-grow: 1;
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     background-color: #ffffff;
 }
 
@@ -208,6 +207,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style-type: none;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
     
@@ -259,6 +259,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style-type: none;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
@@ -289,7 +290,6 @@ body {
     margin: 0 auto;
 }
 
-
 .subscribe {
     width: 1200px;
     height: 411px;
@@ -317,7 +317,10 @@ body {
 }
 
 .subscribe-inner {
-    text-align: center;    
+    width: 1200px;
+    text-align: center; 
+    background-color: #FFFFFF;
+    margin: 0 auto;  
 }
 
 .subscribe-form-field::placeholder { 
@@ -330,6 +333,12 @@ body {
 
 .page-inner {
     color: #000000;
+}
+
+.main-inner {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
 }
 
 .main-inner-bg {
