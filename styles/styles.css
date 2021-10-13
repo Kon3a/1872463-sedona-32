@@ -160,6 +160,8 @@ body {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    background-image: url("../images/catalog-background.jpg");
+    background-repeat: no-repeat;
 }
 
 .page-container {
@@ -333,18 +335,6 @@ body {
 
 .page-inner {
     color: #000000;
-}
-
-.main-inner {
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
-}
-
-.main-inner-bg {
-    background-image: url("../images/catalog-background.jpg");
-    width: 1200px;
-    background-repeat: no-repeat;
 }
 
 .page-title {
