@@ -34,6 +34,17 @@ body {
     outline-offset: -5px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Кнопки */
 .button {
     font-size: 16px;
@@ -108,27 +119,26 @@ body {
     display: flex;
     width: 1200px;
     margin: 0 auto;  
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
 }
 
 .navigation-list {
+    display: flex;
+    align-items: center;
     width: 531px;
     margin: 0;
     padding: 0;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    list-style-type: none;
 }  
 
-.navigation-user {
-    text-align: right;
-}
-
 .navigation-link {
+    display: block;
+    padding: 6px 12px;
+    font-size: 20px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 700;
     text-decoration: none;
-    color: #000000;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    color: #000000;    
 }
 
 .main-container {
@@ -147,8 +157,6 @@ body {
     url("../images/welcome.svg") no-repeat  371px 51px,
     url("../images/index-background-top-layer.svg") repeat-x 0 428px,
     url("../images/index-background.jpg");
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;   
 }
 
 .tagline {
@@ -304,7 +312,7 @@ body {
 
 .main-inner-bg {
     background-image: url("../images/catalog-background.jpg");
-    width: 1200px;    
+    width: 1200px;
     background-repeat: no-repeat;
 }
 
