@@ -17,6 +17,15 @@
 html {
     height: 100%;
 }
+.container-shadow {    
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 0; 
+    width: 1280px;
+    background-color: #E5E5E5;   
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
 
 body {
     margin: 0;
@@ -30,8 +39,6 @@ body {
     font-weight: 400;
     color: #333333;
     background-color: #FFFFFF;    
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
 }
 
 .visually-hidden {
@@ -44,6 +51,7 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 
 /* Кнопки */
 .button {
@@ -118,7 +126,8 @@ body {
 .navigation {
     display: flex;
     width: 1200px;
-    margin: 0 auto;  
+    margin: 0 auto;
+    background-color: #FFFFFF;  
 }
 
 .navigation-list {
@@ -148,6 +157,10 @@ body {
 
 .main-container {
     flex-grow: 1;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
 }
 
 .page-container {
@@ -166,6 +179,7 @@ body {
 
 .tagline {
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .tagline-title {
@@ -193,9 +207,10 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    text-align: center;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
-    text-align: center;
+    
 }
 .advantages-title {
     font-size: 24px;
@@ -270,6 +285,8 @@ body {
 
 .hotel-search {
     text-align: center; 
+    background-color: #FFFFFF;
+    margin: 0 auto;
 }
 
 
@@ -406,6 +423,13 @@ body {
     color: #000000;
     background-color: #f2f2f2;
 }
+
+.page-footer {
+    background-color: #FFFFFF;
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .page-footer-container {
     display: flex;
     width: 1200px;
