@@ -434,35 +434,69 @@ body {
     display: flex;
     width: 1200px;
     margin: 0 auto;  
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    
 }
 
 .footer-social {
     width: 240px;
-
+    height: 120px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    outline-offset: -5px;    
+}
+
+.footer-social-list {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; 
+}
+
+.footer-social-item {
+    width: 40px;
+    height: 40px;    
 }
 
 .footer-contakt-tel {
     width: 720px;
-
     outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    outline-offset: -5px;  
 }
 
 .html-academy {
     width: 240px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
 
+.html-academy-logo {
+    display: block;
+    width: 115px;
+    height: 33px;
+    margin-top: 42px;
+    margin-bottom: 44px;
+    margin-left: 53px;
+    
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
 
 .footer-contakt-tel-link {
+    display: block;
+    width: 720px;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
     color: #000000;
     text-decoration: none;
+    text-align: center;
 }
