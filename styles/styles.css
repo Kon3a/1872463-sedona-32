@@ -22,7 +22,7 @@ html {
     margin-right: auto; 
     padding: 0; 
     width: 1280px;
-    background-color: #E5E5E5;   
+    background-color: #e5e5e5;   
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
@@ -38,7 +38,7 @@ body {
     font-style: normal;
     font-weight: 400;
     color: #333333;
-    background-color: #FFFFFF;    
+    background-color: #e5e5e5;    
 }
 
 .visually-hidden {
@@ -425,21 +425,19 @@ body {
 }
 
 .page-footer {
-    background-color: #FFFFFF;
-    width: 1200px;
+    width: 1200px;     
     margin: 0 auto;
+    background-color: #ffffff;
 }
 
 .page-footer-container {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;  
-    
+    margin: 0 auto;
+    background-color: #ffffff;   
 }
 
 .footer-social {
-    width: 240px;
-    height: 120px;
+    width: 240px;    
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;    
 }
@@ -447,10 +445,11 @@ body {
 .footer-social-list {
     display: flex;    
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: center;    
     margin: 0;
     padding: 0;
+    margin-top: 49px;
+    margin-bottom: 53px;
     list-style-type: none;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
