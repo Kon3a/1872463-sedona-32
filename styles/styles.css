@@ -141,6 +141,10 @@ body {
     color: #000000;    
 }
 
+.navigation-user {
+    text-align: right;
+}
+
 .main-container {
     flex-grow: 1;
 }
