@@ -22,7 +22,7 @@ html {
     padding: 0; 
     max-width: 1200px;
     background-color: #ffffff;
-    
+
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
@@ -51,8 +51,6 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-
 /* Кнопки */
 .button {
     font-size: 16px;
@@ -127,7 +125,9 @@ body {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    background-color: #FFFFFF;  
+    background-color: #FFFFFF;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;  
 }
 
 .navigation-list {
@@ -142,6 +142,9 @@ body {
 
 .navigation-link {
     display: block;
+    height: 26px;
+    margin-top: 13px;
+    margin-bottom: 14px;
     padding: 6px 12px;
     font-size: 20px;
     line-height: 26px;
@@ -151,12 +154,17 @@ body {
     color: #000000;    
 }
 
+.logo-img {
+    padding: 0;
+    margin: 0;
+}
+
 .navigation-user {
     text-align: right;
 }
 
 .main-container {
-    flex-grow: 1;
+    flex-grow: 1; 
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -176,11 +184,15 @@ body {
     url("../images/welcome.svg") no-repeat  371px 51px,
     url("../images/index-background-top-layer.svg") repeat-x 0 428px,
     url("../images/index-background.jpg");
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 
 .tagline {
     text-align: center;
     background-color: #FFFFFF;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 
 .tagline-title {
@@ -290,6 +302,8 @@ body {
     text-align: center; 
     background-color: #FFFFFF;
     margin: 0 auto;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 
 .subscribe {
@@ -299,7 +313,9 @@ body {
     background-size: 100% auto;
     background-image: url("../images/background-subscribe.jpg");
     background-repeat: no-repeat;
-    background-color: #000000;    
+    background-color: #000000;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;    
 }
 
 .subscribe-title {
@@ -322,7 +338,9 @@ body {
     width: 1200px;
     text-align: center; 
     background-color: #FFFFFF;
-    margin: 0 auto;  
+    margin: 0 auto; 
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; 
 }
 
 .subscribe-form-field::placeholder { 
@@ -343,9 +361,15 @@ body {
     font-style: normal;
     font-weight: 700;
     color: #ffffff;
+    margin: 0 auto;
     padding-left: 71px;
     padding-top: 35px;
 }
+
+.breadcrumbs { 
+    list-style-type: none;
+}
+
 
 .breadcrumbs-link-current {
     font-size: 16px;
@@ -377,13 +401,43 @@ body {
     color: #ffffff;
 }
 
+.sorting-type-container {
+    display: flex;
+    justify-content: flex-start;
+}
 .result {
+    width: 350px;
     font-size: 30px;
     line-height: 39px;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
+    margin-left: 71px;
+    margin-right: 192px;
 }
+
+.sorting-type-form-container {
+    margin-right: 81px;
+    width: 287px;
+}
+
+.list-result {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.list-result-item {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.list-result-item:nth-child(3n) {
+    margin-right: 0;
+  }
 
 .hotel-card-title {
     font-size: 24px;

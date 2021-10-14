@@ -48,19 +48,21 @@
          <main class="main-container main-inner">
             <div class="page-container">
                <h1 class="page-title">Гостиницы Седоны</h1>
+             <div class="breadcrumbs-container">
                <ul class="breadcrumbs">
                   <li class="breadcrumbs-item">
                      <a class="breadcrumbs-link" href="index.html">
-                     <img src="images/general-icon.svg" alt="Переход на Главную страницу сайта">
+                     <img src="images/general-icon.svg" alt="Переход на Главную страницу сайта" width="12" height="12">
                      </a>
                   </li>
                   <li class="breadcrumbs-item">
-                     <img src="images/drop-left.svg" alt="Разделитель">
+                     <img src="images/drop-left.svg" alt="Разделитель" width="5" height="8">
                   </li>
                   <li class="breadcrumbs-item">
                      <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
                   </li>
                </ul>
+             </div>   
                <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
                <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
                   <fieldset class="filter-hotels-group">
@@ -131,8 +133,10 @@
                      </li>
                   </ul>
                </form>
-               <form class="sorting-type">
-                  <p class="result">Найдено гостиниц: 38</p>
+               <div class="sorting-type-container">
+                 <p class="result">Найдено гостиниц: 38</p>
+                <span class="sorting-type-form-container">
+                <form class="sorting-type">
                   <label class="visually-hidden" for="sorting">Сортировка</label>
                   <select class="select-control" id="sorting" name="sorting">
                      <option value="cheap">Сначала дешёвые</option>
@@ -140,8 +144,10 @@
                      <option value="popular">Сначала популярные</option>
                   </select>
                   <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-               </form>
-               <ul class="list-result">
+                </form>
+                </span>
+                <div class="list-result-container">
+                 <ul class="list-result">
                   <li class="list-result-item">
                      <button class="button result-type">
                      <img src="images/mode-list.svg" alt="Список" width="16" height="14"/>
@@ -157,7 +163,9 @@
                      <img src="images/mode-tile.svg" alt="Подробный список" width="16" height="14"/>
                      </button>
                   </li>
-               </ul>
+                 </ul>
+                </div>
+               </div>
                <ul class="hotel-list">
                   <li class="hotel-list-item">
                      <a class="hotel-card-img-link" href="#">
