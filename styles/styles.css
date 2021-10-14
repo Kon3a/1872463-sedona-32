@@ -165,15 +165,20 @@ body {
 
 .main-container {
     flex-grow: 1; 
-    width: 1200px;
+    /*width: 1200px;*/
     margin: 0 auto;
     background-color: #ffffff;
     background-image: url("../images/catalog-background.jpg");
     background-repeat: no-repeat;
 }
 
+.main-inner {
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
 .page-container {
-    width: 1200px;
+    /*width: 1200px;*/
     margin: 0 auto;
 }
       
@@ -335,10 +340,10 @@ body {
 }
 
 .subscribe-inner {
-    width: 1200px;
+    /*width: 1200px;*/
     text-align: center; 
     background-color: #FFFFFF;
-    margin: 0 auto; 
+    /*margin: 0 auto; */
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
 }
@@ -362,14 +367,25 @@ body {
     font-weight: 700;
     color: #ffffff;
     margin: 0 auto;
-    padding-left: 71px;
+    /*padding-left: 71px;*/
     padding-top: 35px;
 }
 
 .breadcrumbs { 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
+.breadcrumbs-item {
+    margin-left: 10px;
+}
+
+.breadcrumbs-item:nth-child {
+    margin-right: 0;
+}
 
 .breadcrumbs-link-current {
     font-size: 16px;
@@ -404,6 +420,7 @@ body {
 .sorting-type-container {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 .result {
     width: 350px;
@@ -412,27 +429,37 @@ body {
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-    margin-left: 71px;
+    /*margin-left: 71px;*/
     margin-right: 192px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; 
 }
 
 .sorting-type-form-container {
-    margin-right: 81px;
+    /*margin-right: 81px;*/
     width: 287px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; 
 }
 
 .list-result {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; 
 }
 
 .list-result-item {
     width: 48px;
     height: 48px;
     margin-right: 8px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 
 .list-result-item:nth-child(3n) {
