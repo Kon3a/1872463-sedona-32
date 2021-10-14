@@ -491,13 +491,40 @@ body {
     text-transform: uppercase;
 }
 
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pagination-item {
+    width: 55px;
+    height: 55px;
+    margin-right: 8px;
+    text-align: center;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+  }
 .pagination-link {
+    display: block;
     color: #FFFFFF;
     background-color: #83B3D3;
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
-}
+    width: 55px;
+    height: 55px;
+    }
   
 .pagination-current {
     color: #000000;
