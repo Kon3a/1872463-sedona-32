@@ -18,11 +18,11 @@ html {
     height: 100%;
 }
 .container-shadow {    
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: 0  auto; 
     padding: 0; 
-    width: 1280px;
-    background-color: #e5e5e5;   
+    max-width: 1200px;
+    background-color: #ffffff;
+    
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
