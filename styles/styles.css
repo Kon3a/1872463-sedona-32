@@ -67,6 +67,8 @@ body {
 }
 
 .button-hotel-search {
+    margin: 0 auto;
+    margin-bottom: 91px;
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
@@ -172,10 +174,11 @@ body {
     background-repeat: no-repeat;
 }
 
-.main-inner {
+.main-inner-container {
     padding-left: 72px;
     padding-right: 72px;
 }
+
 
 .page-container {
     /*width: 1200px;*/
@@ -189,6 +192,7 @@ body {
     url("../images/welcome.svg") no-repeat  371px 51px,
     url("../images/index-background-top-layer.svg") repeat-x 0 428px,
     url("../images/index-background.jpg");
+    margin: 0 auto;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
@@ -196,12 +200,16 @@ body {
 .tagline {
     text-align: center;
     background-color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 63px;
+    padding-bottom: 79px;
+    
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
 
 .tagline-title {
-    margin-top: 63px;
+    margin-bottom: 23px;
 }
 
 .title-h2 {
@@ -217,7 +225,8 @@ body {
     line-height: 36px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 23px;
+    margin: 0 auto;
+    
 }
 .advantages-list {
     display: flex;
@@ -304,18 +313,29 @@ body {
 }
 
 .hotel-search {
+    margin: 0 auto;
+    padding-top: 91px;    
     text-align: center; 
     background-color: #FFFFFF;
-    margin: 0 auto;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
+.hotel-search-title {     
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.hotel-search-description {
+    margin: 0 auto;
+    margin-bottom: 73px;
+}
+
 
 .subscribe {
-    width: 1200px;
-    height: 411px;
+    margin: 0 auto;
+    padding-top: 94px;
+    /*padding-bottom: 94px;*/    
+    width: 1200px;    
     text-align: center;    
-    background-size: 100% auto;
     background-image: url("../images/background-subscribe.jpg");
     background-repeat: no-repeat;
     background-color: #000000;
@@ -324,21 +344,27 @@ body {
 }
 
 .subscribe-title {
+    margin: 0 auto;
+    margin-bottom: 15px;
     font-size: 30px;
-    line-height: 36 px;
+    line-height: 36px;
     font-style: normal;
     font-weight: 700;
     color: #ffffff;
-    text-transform: uppercase;
-    padding-top: 94px;
+    text-transform: uppercase;    
 }
 
 .subscribe-description {
+    margin: 0 auto;
+    margin-bottom: 26px;
     font-size: 22px;
     color: #ffffff;
-    padding-top: 15px;
 }
 
+.subscribe-form {
+    margin: 0 auto;
+    padding-bottom: 94px;
+}
 .subscribe-inner {
     /*width: 1200px;*/
     text-align: center; 
@@ -505,6 +531,7 @@ body {
 }
 
 .pagination-item {
+
     width: 55px;
     height: 55px;
     margin-right: 8px;
