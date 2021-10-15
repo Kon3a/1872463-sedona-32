@@ -131,16 +131,33 @@ body {
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;  
 }
-
-.navigation-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 531px;
+.navigation-left,
+.navigation-right {
     margin: 0;
     padding: 0;
+}
+.navigation-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 460px;
+    margin: 0; 
+    padding-left: 71px;
     list-style-type: none;
 }  
+
+.navigation-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 460px;
+    margin: 0;
+    padding-right: 71px;
+    padding-left: 0;      
+    list-style-type: none;
+} 
 
 .navigation-link {
     display: block;
@@ -161,9 +178,7 @@ body {
     margin: 0;
 }
 
-.navigation-user {
-    text-align: right;
-}
+
 
 .main-container {
     flex-grow: 1; 
