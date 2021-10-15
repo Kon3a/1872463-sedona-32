@@ -447,6 +447,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 .result {
     width: 350px;
@@ -475,22 +477,32 @@ body {
     align-items: center;
     margin: 0px;
     padding: 0px;
-    list-style-type: none;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px; 
+    list-style-type: none;    
 }
 
 .list-result-item {
     width: 48px;
     height: 48px;
     margin-right: 8px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    text-align: center;
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
 }
 
 .list-result-item:nth-child(3n) {
     margin-right: 0;
-  }
+}
+
+.list-result-link {
+    display: block;
+    padding-top: 10px;        
+    width: 48px;
+    height: 48px;
+}
+
+.result-item-current {
+    border-color: #000000;
+}
 
 .hotel-card-title {
     font-size: 24px;
@@ -517,10 +529,19 @@ body {
     text-transform: uppercase;
 }
 
+.button-load-more-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 89px;
+
+}
 .pagination-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 89px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; 
 }
 
 .pagination {
@@ -528,34 +549,38 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; 
 }
 
 .pagination-item {
-
     width: 55px;
     height: 55px;
     margin-right: 8px;
     text-align: center;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    background-color: #83b3d3;
+    border-radius: 4px;
+    
 }
 .pagination-item:not(:last-child) {
     margin-right: 8px;
   }
 .pagination-link {
     display: block;
-    color: #FFFFFF;
-    background-color: #83B3D3;
+    padding-top: 15px;    
+    color: #ffffff;    
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
     width: 55px;
     height: 55px;
     }
-  
-.pagination-current {
+.pagination-item-current {
+    background-color: #e5e5e5;
+}
+
+.pagination-link-current {
     color: #000000;
-    background-color: #f2f2f2;
 }
 
 .page-footer {
