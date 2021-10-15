@@ -451,20 +451,18 @@ body {
     outline-offset: -5px;
 }
 .result {
-    width: 350px;
     font-size: 30px;
     line-height: 39px;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-    /*margin-left: 71px;*/
-    margin-right: 192px;
+    margin-right: 175px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
 }
 
 .sorting-type-form-container {
-    /*margin-right: 81px;*/
+    margin-right: 81px;
     width: 287px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
