@@ -67,8 +67,7 @@ body {
 }
 
 .button-hotel-search {
-    margin: 0 auto;
-    margin-bottom: 91px;
+    margin: 0 auto;    
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
@@ -225,6 +224,7 @@ body {
 
 .tagline-title {
     margin-bottom: 23px;
+    margin-top: 0;
 }
 
 .title-h2 {
@@ -329,7 +329,8 @@ body {
 
 .hotel-search {
     margin: 0 auto;
-    padding-top: 91px;    
+    padding-top: 91px;
+    padding-bottom: 91px;   
     text-align: center; 
     background-color: #FFFFFF;
     outline: 5px solid rgba(255, 99, 78, 0.5);
