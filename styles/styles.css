@@ -68,7 +68,7 @@ body {
 
 .button-hotel-search {
     margin: 0 auto;
-    /*margin-bottom: 91px;*/
+    margin-bottom: 91px;
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
@@ -234,7 +234,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
-    margin-top: 0;
 }
 
 .tagline-description {
@@ -330,8 +329,7 @@ body {
 
 .hotel-search {
     margin: 0 auto;
-    padding-top: 91px;
-    padding-bottom: 91px;    
+    padding-top: 91px;    
     text-align: center; 
     background-color: #FFFFFF;
     outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -564,13 +562,11 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px; 
+    
 }
 
 .pagination-item {
-    width: 55px;
-    height: 55px;
+
     margin-right: 8px;
     text-align: center;
     background-color: #83b3d3;
@@ -588,7 +584,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     width: 55px;
-    height: 55px;
+    height: 40px;
     }
 .pagination-item-current {
     background-color: #e5e5e5;
