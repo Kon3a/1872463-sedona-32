@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
    <head>
@@ -5,7 +6,8 @@
       <title>Разметка страницы выбора гостниц - учебный проект "Седона"</title>
       <link rel="stylesheet" href="styles/styles.css">
       <base href="https://htmlacademy-htmlcss.github.io/1872463-sedona-32/6/">
-   </head>
+     <base href="https://htmlacademy-htmlcss.github.io/1872463-sedona-32/7/">
+</head>
    <body>
       <div class="container-shadow">
          <header class="page-header">
@@ -54,6 +56,7 @@
          <main class="main-container main-inner">
             <div class="main-inner-container">
             <div class="page-container">
+             <div class="filter-hotels-container">
                <h1 class="page-title">Гостиницы Седоны</h1>
              <div class="breadcrumbs-container">
                <ul class="breadcrumbs">
@@ -140,6 +143,7 @@
                      </li>
                   </ul>
                </form>
+             </div>
                <div class="sorting-type-container">
                   <p class="result">Найдено гостиниц: 38</p>
                   <span class="sorting-type-form-container">
@@ -173,7 +177,7 @@
                  </ul>
                 </div>
                </div>
-             <div class="hotel-list-container">
+               <div class="hotel-list-container">
                <ul class="hotel-list">
                   <li class="hotel-list-item">
                      <a class="hotel-card-img-link" href="#">
@@ -269,11 +273,11 @@
                      </ul>
                   </li>
                </ul>
-               <div class="button-load-more-container">
-               <button class="button button-load-more">Загрузить еще</button>
-               </div> 
                </div>
-             <div class="pagination-container">
+               <div class="button-load-more-container">
+               <a class="button button-load-more">Загрузить еще</a>
+               </div> 
+               <div class="pagination-container">
                <ul class="pagination">
                   <li class="pagination-item pagination-item-current">
                      <a class="pagination-link pagination-link-current">1</a>
@@ -304,7 +308,7 @@
                   </select>
                   <button class="visually-hidden" type="submit">Выбрать количество гостиниц на странице</button>
                </form>
-             </div>
+               </div>
                <section class="subscribe-inner">
                   <h2 class="subscribe-title page-inner">Подпишитесь на рассылку</h2>
                   <p class="subscribe-description page-inner">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
