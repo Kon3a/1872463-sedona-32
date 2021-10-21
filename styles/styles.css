@@ -401,10 +401,11 @@ body {
     padding-bottom: 94px;
 }
 .subscribe-inner {
-    /*width: 1200px;*/
     text-align: center; 
     background-color: #FFFFFF;
-    /*margin: 0 auto; */
+    margin-left: 72px;
+    margin-right: 72px;
+    padding-top: 44px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
 }
@@ -697,7 +698,9 @@ padding-bottom: 45px;
 .button-load-more-container {
     margin-left: 72px;
     margin-right: 72px;
-    margin-bottom: 89px;
+    padding-top: 31px;
+    padding-bottom: 30px;
+    border-top: 1px solid #E6E6E6;;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
@@ -706,9 +709,11 @@ padding-bottom: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 89px;
     margin-left: 72px;
     margin-right: 72px;
+    padding-top: 31px;
+    padding-bottom: 45px;    
+    border-top: 1px solid #E6E6E6;;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
 }
@@ -751,8 +756,10 @@ padding-bottom: 45px;
 }
 
 .page-footer {
-    width: 1200px;     
-    margin: 0 auto;
+    /*width: 1200px;*/
+    margin-left: 72px;
+    margin-right: 72px;    
+    /*margin: 0 auto;*/
     background-color: #ffffff;
 }
 
