@@ -131,11 +131,27 @@ body {
 .button-to-favorites {
     color: #ffffff;
     background-color: #83B3D3;
+    width: 160px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .button-in-favorites {
     color: #ffffff;
     background-color: #7DB54F;
+    width: 160px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .button-load-more {
