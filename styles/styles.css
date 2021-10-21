@@ -120,45 +120,6 @@ body {
     border: transparent;
 }
 
-.button-details {
-    color: #ffffff;
-    background-color: #756257;    
-    width: 151px;
-    height: 37px;
-    border: none;
-    border-radius: 4px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.button-to-favorites {
-    color: #ffffff;
-    background-color: #83B3D3;
-    width: 160px;
-    height: 37px;
-    border: none;
-    border-radius: 4px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.button-in-favorites {
-    color: #ffffff;
-    background-color: #7DB54F;
-    width: 160px;
-    height: 37px;
-    border: none;
-    border-radius: 4px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .button-load-more {
     display: block;
     font-size: 20px;
@@ -543,6 +504,110 @@ padding-bottom: 45px;
     outline-offset: -5px;
 }
 
+.hotel-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hotel-list-item {
+    display: grid;
+    grid-template-columns: 180px 36px 151px 8px 160px 361px 160px;
+    grid-template-rows: 32px 23px 65px;
+    border-top: 1px solid #E6E6E6;
+    padding-top: 31px;
+    padding-bottom: 30px;
+}
+
+.hotel-card-img-link {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.hotel-card-title-link {
+    text-decoration: none;
+    grid-column: 3/6;
+    grid-row: 1/2;
+    align-items: start;
+}
+
+.hotel-card-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: start;
+}
+    
+.hotel-card-price {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    align-self: start;   
+}
+.button-details {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: end;    
+    color: #ffffff;
+    background-color: #756257;    
+    width: 151px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;     
+}
+
+.button-to-favorites {
+    grid-column: 5/6;
+    grid-row: 3/4;
+    align-self: end;
+    margin-top: auto;
+    color: #ffffff;
+    background-color: #83B3D3;
+    width: 160px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.button-in-favorites {
+    grid-column: 5/6;
+    grid-row: 3/4;
+    align-self: end;    
+    color: #ffffff;
+    background-color: #7DB54F;
+    width: 160px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.star-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    grid-column: 7/8;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.star-list-item {
+    margin-right: 7px;
+}
+
+.star-list-item:not(:last-child) {
+    margin-right: 7px;
+}
 
 .result {
     font-size: 30px;
@@ -561,8 +626,6 @@ padding-bottom: 45px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
 }
-
-
 
 .list-result {
     display: flex;
@@ -603,10 +666,7 @@ padding-bottom: 45px;
     line-height: 31px;
     font-weight: 700;
     color: #000000;
-}
-
-.hotel-card-title-link {
-    text-decoration: none;
+    margin: 0;
 }
 
 .hotel-card-type, 
@@ -620,15 +680,18 @@ padding-bottom: 45px;
     font-size: 16px;
     line-height: 21px;
     color: #333333;
-    width: 160px;
-    height: 37px;
+    /*width: 160px;
+    height: 37px;*/
     background-color: #f2f2f2;
     border-radius: 4px;
     padding-top: 9px;
     padding-bottom: 10px;
-    padding-left: 31px;
-    padding-right: 31px;
-    text-transform: uppercase;   
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    grid-column: 7/8;
+    grid-row: 3/4;
+    align-self: end;     
 }
 
 .button-load-more-container {
@@ -638,8 +701,6 @@ padding-bottom: 45px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
-
-
 
 .pagination-container {
     display: flex;
