@@ -85,8 +85,13 @@ body {
 
 .button-subscribe-form {
     font-size: 20px;
+    line-height: 26px;
     color: #ffffff;
-    background-color: #83B3D3;    
+    background-color: #83B3D3;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 0 10px 10px 0;
 }
 
 .button-filter-apply {
@@ -615,7 +620,15 @@ padding-bottom: 45px;
     font-size: 16px;
     line-height: 21px;
     color: #333333;
-    text-transform: uppercase;
+    width: 160px;
+    height: 37px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    text-transform: uppercase;   
 }
 
 .button-load-more-container {
