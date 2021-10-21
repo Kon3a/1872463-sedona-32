@@ -64,6 +64,14 @@ body {
 .button-navigation {
     color: #ffffff;
     background-color: #756257;
+    width: 160px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .button-hotel-search {
