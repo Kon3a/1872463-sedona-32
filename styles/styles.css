@@ -56,6 +56,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
+    font-style: normal;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -116,7 +117,15 @@ body {
 
 .button-details {
     color: #ffffff;
-    background-color: #756257;
+    background-color: #756257;    
+    width: 151px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .button-to-favorites {
