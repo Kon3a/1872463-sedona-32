@@ -206,8 +206,10 @@ body {
 }
 
 .filter-hotels-container {
-    margin-left: 72px;
-    margin-right: 72px;
+    /*margin-left: 72px;
+    margin-right: 72px;*/
+    padding-left: 72px;
+    padding-right: 72px;
     padding-bottom: 55px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
@@ -403,8 +405,10 @@ body {
 .subscribe-inner {
     text-align: center; 
     background-color: #FFFFFF;
-    margin-left: 72px;
-    margin-right: 72px;
+    /*margin-left: 72px;
+    margin-right: 72px;*/
+    padding-left: 72px;
+    padding-right: 72px;
     padding-top: 44px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px; 
@@ -462,7 +466,6 @@ padding-bottom: 45px;
 }
 /* Верхняя форма*/
 .filter-hotels {
-    /*background-color: black; временный фон*/
     display: grid;
     grid-template-columns: 264px 264px 264px 264px;
 }
@@ -474,10 +477,16 @@ padding-bottom: 45px;
 }
 .filter-hotels-group {
     border: none;
+    justify-self: start;
+    padding: 0;
 }
 .catalog-filter-list,
 .button-filter-list {
     list-style-type: none;
+}
+
+.button-filter-list { 
+    justify-self: end;
 }
 
 .control-label {
@@ -492,15 +501,19 @@ padding-bottom: 45px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 72px;
-    margin-right: 72px;
+    /*margin-left: 72px;
+    margin-right: 72px;*/
+    padding-left: 72px;
+    padding-right: 72px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
 
 .hotel-list-container {
-    margin-left: 72px;
-    margin-right: 72px;
+    /*margin-left: 72px;
+    margin-right: 72px;*/
+    padding-left: 72px;
+    padding-right: 72px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
@@ -696,8 +709,10 @@ padding-bottom: 45px;
 }
 
 .button-load-more-container {
-    margin-left: 72px;
-    margin-right: 72px;
+    /*margin-left: 72px;
+    margin-right: 72px;*/
+    padding-left: 72px;
+    padding-right: 72px;
     padding-top: 31px;
     padding-bottom: 30px;
     border-top: 1px solid #E6E6E6;;
@@ -709,8 +724,10 @@ padding-bottom: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 72px;
-    margin-right: 72px;
+    /*margin-left: 72px;
+    margin-right: 72px;*/
+    padding-left: 72px;
+    padding-right: 72px;
     padding-top: 31px;
     padding-bottom: 45px;    
     border-top: 1px solid #E6E6E6;;
@@ -757,8 +774,10 @@ padding-bottom: 45px;
 
 .page-footer {
     /*width: 1200px;*/
-    margin-left: 72px;
-    margin-right: 72px;    
+    /*margin-left: 72px;
+    margin-right: 72px;*/
+    padding-left: 72px;
+    padding-right: 72px;   
     /*margin: 0 auto;*/
     background-color: #ffffff;
 }
