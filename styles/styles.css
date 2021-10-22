@@ -773,12 +773,12 @@ body {
   list-style-type: none;
 }
 
-.pagination-item {
-  margin-right: 8px;
+.pagination-item {  
   text-align: center;
   background-color: #83b3d3;
   border-radius: 4px;
 }
+
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
