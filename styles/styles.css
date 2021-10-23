@@ -237,11 +237,9 @@ body {
 }
 
 .filter-hotels-container {
-  /*margin-left: 72px;
-    margin-right: 72px;*/
   padding-left: 72px;
   padding-right: 72px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -489,7 +487,7 @@ body {
 /* Верхняя форма*/
 .filter-hotels {
   display: grid;
-  grid-template-columns: 264px 264px 264px 264px;
+  grid-template-columns: 155px 62px 139px 205px 280px 38px 170px;
 }
 
 .catalog-filter-title {
@@ -497,10 +495,15 @@ body {
   font-weight: 700;
   color: #ffffff;
 }
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 13px;
+}
 .filter-hotels-group {
   border: none;
   justify-self: start;
   padding: 0;
+  margin: 0;
 }
 .catalog-filter-list,
 .button-filter-list {
@@ -508,8 +511,46 @@ body {
 }
 
 .button-filter-list {
-  justify-self: end;
+  margin: 0;
+  padding: 0;
 }
+
+.filter-hotels-infra {
+  grid-column: 1/2;
+}
+
+.list-infra {
+  display: grid;
+  grid-template-columns: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-hotels-type  {
+  grid-column: 3/4;
+}
+
+.list-type {
+  display: grid;
+  grid-template-columns: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-hotels-price {
+  grid-column: 5/6;
+}
+.filter-hotels-apply-reset {
+  grid-column: 7/8;
+  justify-self: end;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.catalog-filter-title {
+  padding-bottom: 30px;
+}
+
 
 .control-label {
   font-size: 18px;
@@ -523,8 +564,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /*margin-left: 72px;
-    margin-right: 72px;*/
   padding-left: 72px;
   padding-right: 72px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -532,8 +571,6 @@ body {
 }
 
 .hotel-list-container {
-  /*margin-left: 72px;
-    margin-right: 72px;*/
   padding-left: 72px;
   padding-right: 72px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -846,7 +883,7 @@ body {
 }
 
 .html-academy {
-  width: 240px;
+  width: 168px;
   padding-top: 42px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
