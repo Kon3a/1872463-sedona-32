@@ -23,8 +23,7 @@ html {
   max-width: 1200px;
   background-color: #ffffff;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 body {
@@ -148,8 +147,7 @@ body {
   padding-left: 72px;
   padding-right: 72px;
   background-color: #ffffff;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .navigation-list {
@@ -189,21 +187,18 @@ body {
 /*
 .navigation-left-item {
   margin-right: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 */
 .navigation-left-item:not(:last-child) {
   margin-right: 33px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 /*
 .navigation-right-item {
   margin-left: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 */
 .navigation-right-item:not(:first-child) {
@@ -240,8 +235,7 @@ body {
   padding-left: 72px;
   padding-right: 72px;
   padding-bottom: 60px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .page-container {
@@ -256,8 +250,7 @@ body {
     url("../images/index-background-top-layer.svg") repeat-x 0 428px,
     url("../images/index-background.jpg");
   margin: 0 auto;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .tagline {
@@ -267,8 +260,7 @@ body {
   padding-top: 63px;
   padding-bottom: 79px;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .tagline-title {
@@ -299,9 +291,9 @@ body {
   padding: 0;
   text-align: center;
   list-style-type: none;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
+  
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
@@ -309,12 +301,77 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 98px;
+  padding-bottom: 25px;
 }
 
 .advantages-item-town,
 .advantages-item-bridge {
   width: 1200px;
   background-color: #83b3d3;
+}
+
+.advantages-title-town,
+.advantages-title-bridge {
+  color: #ffffff;
+}
+
+.advantages-item-town {
+  display: grid;
+  grid-template-columns: 400px 800px;
+  grid-template-rows: 183px 51px 150px 400px;
+}
+
+.advantages-title-town  {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.adv-img-town  {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.advantages-number-town {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.advantages-description-town {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.advantages-additional-list  {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.advantages-item-bridge {
+  display: grid;
+  grid-template-columns: 800px 400px;
+  grid-template-rows: 183px 51px 150px;
+}
+
+.advantages-title-bridge  {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.adv-img-bridge  {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.advantages-number-bridge {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.advantages-description-bridge {
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 .advantages-item-area,
@@ -328,21 +385,27 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-title-white {
-  color: #ffffff;
-}
-
 .advantages-number,
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   font-style: normal;
   font-weight: 400;
+  margin: 0;
 }
 
-.advantages-number-white,
+.advantages-number {
+  padding-bottom: 26px;
+}
+
+.advantages-number-town,
+.advantages-number-bridge,
 .advantages-description-white {
   color: #ffffff;
+}
+
+.advantages-description {
+  padding-bottom: 77px;
 }
 
 .advantages-additional-list {
@@ -352,8 +415,7 @@ body {
   padding: 0;
   text-align: center;
   list-style-type: none;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .adv-add-item-housing,
@@ -381,8 +443,7 @@ body {
   padding-bottom: 91px;
   text-align: center;
   background-color: #ffffff;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 .hotel-search-title {
   margin: 0 auto;
@@ -402,8 +463,7 @@ body {
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-color: #000000;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .subscribe-title {
@@ -435,8 +495,7 @@ body {
   padding-right: 72px;
   padding-top: 44px;
   padding-bottom: 136px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .subscribe-form-field::placeholder {
@@ -566,15 +625,13 @@ body {
   align-items: center;
   padding-left: 72px;
   padding-right: 72px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .hotel-list-container {
   padding-left: 72px;
   padding-right: 72px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .hotel-list {
@@ -685,15 +742,13 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 175px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .sorting-type-form-container {
   margin-right: 81px;
   width: 287px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .list-result {
@@ -769,8 +824,7 @@ body {
   padding-top: 31px;
   padding-bottom: 30px;
   border-top: 1px solid #e6e6e6;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .pagination-container {
@@ -782,8 +836,7 @@ body {
   padding-top: 31px;
   padding-bottom: 45px;
   border-top: 1px solid #e6e6e6;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .pagination {
@@ -835,8 +888,7 @@ body {
 .footer-social {
   width: 168px;
   padding-top: 49px;  
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .footer-social-list {
@@ -863,8 +915,7 @@ body {
   height: 50px;
   padding-top: 40px; 
   padding-bottom: 30px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 
@@ -878,15 +929,13 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .html-academy {
   width: 168px;
   padding-top: 42px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
 
 .html-academy-logo {
@@ -894,6 +943,5 @@ body {
   width: 115px;
   height: 33px; 
   margin-left: auto;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
