@@ -89,9 +89,6 @@ body {
  border-radius: 10px;
 }
 
-
-
-
 .button-subscribe-form {
   font-size: 20px;
   line-height: 26px;
@@ -441,6 +438,14 @@ body {
   outline-offset: -5px;
 }
 
+.advantages-additional-item {
+  padding-top: 184px;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-bottom: 79px;
+}
+
+/*
 .adv-add-item-housing {
   padding-top: 89px;
 }
@@ -451,15 +456,14 @@ body {
 .adv-add-item-souvenirs {
   padding-top: 85px;
 }
+*/
 
 .adv-add-item-housing,
 .adv-add-item-souvenirs {
-  width: 400px;
   background-color: #f0f6fa; 
 }
 
 .adv-add-item-food {
-  width: 400px;
   background-color: #ffffff;
 }
 .adv-add-img-housing {
@@ -474,7 +478,6 @@ body {
   padding-bottom: 23px;
 }
 
-
 .advantages-additional-title {
   font-size: 24px;
   line-height: 28px;
@@ -482,11 +485,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 20px;
-}
-
-.advantages-additional-description {
-  padding-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .advantages-additional-description {
