@@ -516,10 +516,6 @@ body {
   padding-bottom: 136px;  
 }
 
-.subscribe-form-field::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .subscribe-form-field {
   font-family: "PTSans";
   color: rgba(0, 0, 0, 0.6);
@@ -697,44 +693,34 @@ body {
 .button-details {
   grid-column: 3/4;
   grid-row: 3/4;
-  align-self: end;
-  color: #ffffff;
   background-color: #756257;
   width: 151px;
   height: 37px;
-  border: none;
-  border-radius: 4px;
-  padding-top: 9px;
-  padding-bottom: 10px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .button-to-favorites {
   grid-column: 5/6;
   grid-row: 3/4;
-  align-self: end;
-  margin-top: auto;
-  color: #ffffff;
-  background-color: #83b3d3;
-  width: 160px;
-  height: 37px;
-  border: none;
-  border-radius: 4px;
-  padding-top: 9px;
-  padding-bottom: 10px;
-  padding-left: 0;
-  padding-right: 0;
+  background-color: #83b3d3;  
 }
 
 .button-in-favorites {
   grid-column: 5/6;
   grid-row: 3/4;
-  align-self: end;
-  color: #ffffff;
-  background-color: #7db54f;
+  background-color: #7db54f;  
+}
+
+.button-to-favorites,
+.button-in-favorites {
   width: 160px;
   height: 37px;
+}
+
+.button-to-favorites,
+.button-in-favorites,
+.button-details {
+  align-self: end;
+  color: #ffffff;  
   border: none;
   border-radius: 4px;
   padding-top: 9px;
