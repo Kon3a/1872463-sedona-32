@@ -657,8 +657,10 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 72px;
+  padding-top: 44px;
   padding-right: 72px;
+  padding-bottom: 42px;
+  padding-left: 72px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
