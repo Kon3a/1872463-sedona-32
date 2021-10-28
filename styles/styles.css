@@ -121,7 +121,6 @@ body {
   width: 160px;
   height: 23px;
   text-transform: none;
-  /*background-color; none;*/
   background: transparent;
   border: transparent;
 }
@@ -149,7 +148,6 @@ body {
 /* Навигация */
 .navigation {
   display: flex;
-  /*width: 1200px;*/
   margin: 0 auto;
   padding-left: 72px;
   padding-right: 72px;
@@ -192,28 +190,17 @@ body {
   margin: 0;
   list-style-type: none;
 }
-/*
-.navigation-left-item {
-  margin-right: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
-}
-*/
+
 .navigation-left-item:not(:last-child) {
   margin-right: 33px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
-/*
-.navigation-right-item {
-  margin-left: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
-}
-*/
 .navigation-right-item:not(:first-child) {
   margin-left: 21px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .navigation-link {
@@ -227,7 +214,6 @@ body {
   color: #000000;
 }
 
-
 .logo-img {
   padding: 0;
   margin: 0;
@@ -235,7 +221,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  /*width: 1200px;*/
   margin: 0 auto;
   background-color: #ffffff;
   background-image: url("../images/catalog-background.jpg");
@@ -243,15 +228,15 @@ body {
 }
 
 .filter-hotels-container {
-  padding-left: 72px;
+  padding-top: 35px;
   padding-right: 72px;
   padding-bottom: 60px;
+  padding-left: 72px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
 .page-container {
-  /*width: 1200px;*/
   margin: 0 auto;
 }
 
@@ -312,8 +297,7 @@ body {
 .advantages-list-item {
   /*padding-top: 98px;
   padding-right: 75px;  
-  padding-left: 75px;
-  
+  padding-left: 75px;  
   padding-bottom: 77px;*/
 }
   
@@ -562,14 +546,13 @@ body {
   color: #000000;
 }
 
-.page-title {
+.page-title-inner {
   font-size: 60px;
   line-height: 78px;
   font-style: normal;
   font-weight: 700;
   color: #ffffff;
   margin: 0 auto;
-  padding-top: 35px;
   padding-bottom: 5px;
 }
 
@@ -662,7 +645,6 @@ body {
   padding-bottom: 30px;
 }
 
-
 .control-label {
   font-size: 18px;
   line-height: 23px;
@@ -726,6 +708,7 @@ body {
   grid-row: 2/3;
   align-self: start;
 }
+
 .button-details {
   grid-column: 3/4;
   grid-row: 3/4;
@@ -795,7 +778,9 @@ body {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 0;
   margin-right: 175px;
+  margin-bottom: 0;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -952,13 +937,6 @@ body {
   background-color: #ffffff;  
 }
 
-/*
-.page-footer-container {
-  display: flex;
-  margin: 0 auto;
-  background-color: #ffffff;
-}
-*/
 .footer-social {
   width: 168px;
   padding-top: 9px;
@@ -985,10 +963,6 @@ body {
 
 .footer-contakt-tel {
   width: 720px;
-  /*
-  height: 50px;
-  padding-top: 40px; 
-  padding-bottom: 30px;*/
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
