@@ -308,6 +308,14 @@ body {
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
+/* после внесения изминений все поползло*/
+.advantages-list-item {
+  /*padding-top: 98px;
+  padding-right: 75px;  
+  padding-left: 75px;
+  
+  padding-bottom: 77px;*/
+}
   
 .advantages-title {
   font-size: 24px;
@@ -317,19 +325,20 @@ body {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 98px;
-  padding-bottom: 25px;
+  margin-bottom: 25px; 
 }
 
 .advantages-item-town,
 .advantages-item-bridge {
   width: 1200px;
   background-color: #83b3d3;
+  color: #ffffff;
 }
 
 .advantages-title-town,
 .advantages-title-bridge {
   color: #ffffff;
+  padding-top: 98px;
 }
 
 .advantages-item-town {
@@ -357,13 +366,6 @@ body {
   grid-column: 1/2;
   grid-row: 3/4;
 }
-
-/*
-.advantages-additional-list  {
-  grid-column: 1/3;
-  grid-row: 4/5;
-}
-*/
 
 .advantages-item-bridge {
   display: grid;
@@ -402,6 +404,13 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-item-area,
+.advantages-item-road,
+.advantages-item-tourist {
+  padding-top: 98px;
+  padding-bottom: 77px;
+}
+
 .advantages-number,
 .advantages-description {
   font-size: 18px;
@@ -412,17 +421,13 @@ body {
 }
 
 .advantages-number {
-  padding-bottom: 26px;
+  margin-bottom: 26px;
 }
 
 .advantages-number-town,
 .advantages-number-bridge,
 .advantages-description-white {
   color: #ffffff;
-}
-
-.advantages-description {
-  padding-bottom: 77px;
 }
 
 .advantages-additional-list {
@@ -444,19 +449,6 @@ body {
   padding-left: 75px;
   padding-bottom: 79px;
 }
-
-/*
-.adv-add-item-housing {
-  padding-top: 89px;
-}
-.adv-add-item-food {
-  padding-top: 91px;
-}
-
-.adv-add-item-souvenirs {
-  padding-top: 85px;
-}
-*/
 
 .adv-add-item-housing,
 .adv-add-item-souvenirs {
@@ -489,7 +481,9 @@ body {
 }
 
 .advantages-additional-description {
+  color: #333333;
   margin: 0;
+  width: 250px;
 }
 
 .hotel-search {
@@ -949,20 +943,25 @@ body {
 }
 
 .page-footer {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 40px;
   padding-left: 72px;
+  padding-bottom: 30px;
   padding-right: 72px;
   background-color: #ffffff;  
 }
 
+/*
 .page-footer-container {
   display: flex;
   margin: 0 auto;
   background-color: #ffffff;
 }
-
+*/
 .footer-social {
   width: 168px;
-  padding-top: 49px;  
+  padding-top: 9px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -972,8 +971,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  
+  list-style-type: none;  
 }
 
 .footer-social-item {
@@ -985,21 +983,21 @@ body {
   margin-right: 29px;
 }
 
-
 .footer-contakt-tel {
   width: 720px;
+  /*
   height: 50px;
   padding-top: 40px; 
-  padding-bottom: 30px;
+  padding-bottom: 30px;*/
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
-
 
 .footer-contakt-tel-link {
   display: block;  
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -1012,7 +1010,7 @@ body {
 
 .html-academy {
   width: 168px;
-  padding-top: 42px;
+  padding-top: 2px;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
