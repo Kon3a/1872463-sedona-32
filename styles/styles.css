@@ -371,21 +371,22 @@ body {
 }
 
 .advantages-item-area,
-.advantages-item-tourist {
-  width: 400px;
+.advantages-item-tourist {  
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-road {
-  width: 400px;
+.advantages-item-road {  
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-area,
 .advantages-item-road,
 .advantages-item-tourist {
+  width: 250px;
   padding-top: 98px;
   padding-bottom: 77px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .advantages-number,
