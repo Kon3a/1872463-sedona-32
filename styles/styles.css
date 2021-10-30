@@ -59,6 +59,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .button-navigation {
