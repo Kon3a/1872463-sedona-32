@@ -423,7 +423,7 @@ body {
 }
 
 .advantages-additional-item {
-  padding-top: 184px;
+  padding-top: 86px;
   padding-right: 75px;
   padding-left: 75px;
   padding-bottom: 79px;
@@ -436,12 +436,6 @@ body {
 
 .adv-add-item-food {
   background-color: #ffffff;
-}
-
-.adv-add-img-housing,
-.adv-add-img-food,
-.adv-add-img-souvenirs {
-  padding-bottom: 23px;
 }
 
 .advantages-additional-title {
@@ -460,6 +454,33 @@ body {
   width: 250px;
   font-size: 18px;
   line-height: 21px;
+}
+
+.adv-add-img-housing {
+  display: block;
+  margin-bottom: 23px;
+  height: 72px;  
+  background-image: url("../images/housing.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.adv-add-img-food {
+  display: block;
+  margin-bottom: 25px;
+  height: 70px;  
+  background-image: url("../images/food.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.adv-add-img-souvenirs {
+  display: block;
+  margin-bottom: 19px;
+  height: 76px;  
+  background-image: url("../images/souvenirs.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;  
 }
 
 .hotel-search {
