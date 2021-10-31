@@ -939,9 +939,12 @@ body {
   padding-top: 2px;  
 }
 
-.html-academy-logo {
+.html-academy-link {
   display: block;
   width: 115px;
   height: 33px; 
-  margin-left: auto;  
+  margin-left: auto;
+  background-image: url("../images/logo_htmlacademy.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;  
 }
