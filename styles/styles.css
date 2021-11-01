@@ -150,8 +150,7 @@ body {
 .side-indent {
   padding-right: 72px;
   padding-left: 72px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  
 }
  
 /* Навигация */
@@ -214,12 +213,28 @@ body {
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
-  color: #000000;
+  color: #000000;    
+}
+
+.logo-link {
+  position: relative; /* Родитель .logo-img */
+  display: block;
 }
 
 .logo-img {
-  padding: 0;
-  margin: 0;
+  /*padding: 0;*/
+  /*margin: 0;*/
+  position: absolute;
+  /*top: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  transform: translateX(-69px);
+  margin-left: 50%;
+  /*margin-right: 0;*/
+  z-index: 3;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .main-container {
