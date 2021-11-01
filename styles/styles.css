@@ -156,9 +156,7 @@ body {
 /* Навигация */
 .navigation {
   display: flex;
-  margin: 0 auto;
-  /*padding-left: 72px;*/
-  /*padding-right: 72px;*/
+  margin: 0 auto; 
   background-color: #ffffff;  
 }
 
@@ -217,21 +215,14 @@ body {
 }
 
 .logo-link {
-  position: relative; /* Родитель .logo-img */
+  position: relative;
   display: block;
 }
 
-.logo-img {
-  /*padding: 0;*/
-  /*margin: 0;*/
-  position: absolute;
-  /*top: 0;*/
-  /*right: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
+.logo-img {  
+  position: absolute;  
   transform: translateX(-69px);
-  margin-left: 50%;
-  /*margin-right: 0;*/
+  margin-left: 50%;  
   z-index: 3;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -246,10 +237,8 @@ body {
 }
 
 .filter-hotels-container {
-  padding-top: 35px;
-  /*padding-right: 72px;*/
-  padding-bottom: 60px;
-  /*padding-left: 72px;*/  
+  padding-top: 35px;  
+  padding-bottom: 60px;  
 }
 
 .page-container {
@@ -302,14 +291,6 @@ body {
   padding: 0;
   text-align: center;
   list-style-type: none;  
-}
-
-/* после внесения изминений все поползло*/
-.advantages-list-item {
-  /*padding-top: 98px;
-  padding-right: 75px;  
-  padding-left: 75px;  
-  padding-bottom: 77px;*/
 }
   
 .advantages-title {
