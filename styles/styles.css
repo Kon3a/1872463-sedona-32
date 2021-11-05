@@ -162,8 +162,8 @@ body {
 
 .navigation-list {
   margin: 0;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -183,6 +183,8 @@ body {
   align-items: center;
   margin: 0;
   padding-right: 0;
+  padding-top: 19px;
+  padding-bottom: 20px;
   list-style-type: none;
 }
 
@@ -222,10 +224,10 @@ body {
 .logo-img {  
   position: absolute;  
   transform: translateX(-69px);
-  margin-left: 50%;  
-  z-index: 3;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  margin-left: 50%;   
+  z-index: 1;
+  /*outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;*/
 }
 
 .main-container {
