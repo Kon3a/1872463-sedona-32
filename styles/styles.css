@@ -21,7 +21,8 @@ html {
   margin: 0 auto;
   padding: 0;
   max-width: 1200px;
-  background-color: #ffffff;  
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
 }
 
 body {
@@ -77,6 +78,20 @@ body {
   padding-right: 0;
 }
 
+.button-navigation:hover {
+  background-color: #615048;
+}
+
+.button-navigation:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;
+}
+
+.button-navigation:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-hotel-search {
   display: block;
   font-size: 20px;
@@ -89,6 +104,20 @@ body {
   padding-bottom: 17px;
   width: 575px;
   border-radius: 10px;
+}
+
+.button-hotel-search:hover {
+  background-color: #615048;
+}
+
+.button-hotel-search:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;  
+}
+
+.button-hotel-search:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);  
 }
 
 .button-subscribe-form {
@@ -149,8 +178,7 @@ body {
 
 .side-indent {
   padding-right: 72px;
-  padding-left: 72px;
-  
+  padding-left: 72px;  
 }
  
 /* Навигация */
@@ -215,6 +243,36 @@ body {
   text-decoration: none;
   color: #000000;    
 }
+
+/* Состояния - Верхнее левое меню */
+.navigation-link:hover {
+  color: #756257;
+  fill: #756257;  
+}
+
+.navigation-link:focus {
+  color: #756257;
+  outline: 3px solid #83B3D3;
+  outline-offset: 5px;   
+  border-radius: 10px;
+  padding: 3px 9px 3px 9px;  
+  margin: -9px;    
+}
+
+.navigation-link:active {  
+  color:rgba(117, 98, 87, 0.3);
+  fill: rgba(117, 98, 87, 1);
+}
+
+.navigation-link:not([href]) {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 24px;
+}
+
+
 
 .logo-link {
   position: relative;
@@ -908,9 +966,7 @@ body {
   display: flex;
   margin: 0 auto;
   padding-top: 40px;
-  /*padding-left: 72px;*/
   padding-bottom: 30px;
-  /*padding-right: 72px;*/
   background-color: #ffffff;  
 }
 
@@ -936,6 +992,36 @@ body {
   margin-right: 29px;
 }
 
+.footer-social-link svg {  
+  fill:#83B3D3;  
+}
+
+.footer-social-link:hover svg {  
+  fill: #68A2CA;  
+}
+
+.footer-social-link:focus svg {  
+  fill: #68A2CA;
+  /*
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  */
+  outline: 3px solid #83B3D3;
+  outline-offset: 5px;   
+  border-radius: 10px;
+  padding: 3px 3px 3px 3px;  
+  /*
+  margin: -9px;  
+  display: block;
+  width: 40px;
+  height: 40px; 
+  */ 
+}
+
+.footer-social-link:active svg {  
+  fill: rgba(104, 162, 202, 0.3);  
+}
+
 .footer-contakt-tel {
   width: 720px;  
 }
@@ -951,6 +1037,23 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;  
+}
+
+.footer-contakt-tel-link:hover {
+  color: #756257;
+}
+
+.footer-contakt-tel-link:focus {
+  color: #756257;
+  outline: 3px solid #83B3D3;  
+  border-radius: 10px;
+  display: block;
+  width: 331px;
+  height: 40px;
+}
+
+.footer-contakt-tel-link:active {  
+  color: rgba(117, 98, 87, 0.3); 
 }
 
 .html-academy {
