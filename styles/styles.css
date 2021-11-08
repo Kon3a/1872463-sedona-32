@@ -272,7 +272,27 @@ body {
   text-underline-offset: 24px;
 }
 
+.round-green-wrapper {
+  position: relative;
+}
 
+.round-green {
+  color: #FFFFFF;
+  display: block;
+  width: 19px;
+  height: 19px;
+  font-size: 10px;
+  line-height: 13px;  
+  box-sizing: border-box;
+  padding-top: 3px;
+  padding-left: 4px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -14px;
+  z-index: 1;
+}
 
 .logo-link {
   position: relative;
