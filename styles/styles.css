@@ -275,13 +275,6 @@ body {
   position: relative;
 }
 
-/*.round-green:focus {
-  outline: 3px solid #83B3D3;  
-  border-radius: 10px;
-  padding: 3px 9px 3px 9px;  
-  margin: -9px;    
-}  */
-
 .round-green-wrapper:focus {
   outline: 3px solid #83B3D3;  
   border-radius: 10px;
@@ -1031,11 +1024,14 @@ body {
 }
 
 .footer-social-link {
-  position: relative;
-  display: block;
+  display: flex;
+  flex-direction: row;  
   width: 40px;
-  height: 40px;
-  border: 3px solid transparent;  
+  height: 40px;    
+}
+
+.footer-social-link-img {
+  margin: auto;
 }
 .footer-social-link svg {  
   fill:#83B3D3;  
@@ -1046,20 +1042,12 @@ body {
 }
 
 .footer-social-link:focus {  
-  border: 3px solid #83B3D3;  
-  border-radius: 10px;
-  top: -7px;
-  left: -10px; 
+  outline: 3px solid #83B3D3;  
+  border-radius: 10px;   
 }
 
 .footer-social-link:focus svg {  
-  fill: #68A2CA;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;  
+  fill: #68A2CA;  
 }
 
 .footer-social-link:active svg {  
