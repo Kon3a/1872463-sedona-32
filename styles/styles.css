@@ -542,16 +542,19 @@ body {
   line-height: 21px;
 }
 
-.adv-add-img-housing {
+
+.adv-add-img-housing:before {
+  content: " ";
   display: block;
   margin-bottom: 23px;
   height: 72px;  
   background-image: url("../images/housing.svg"); 
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center;
 }
 
-.adv-add-img-food {
+.adv-add-img-food:before {
+  content: " ";
   display: block;
   margin-bottom: 25px;
   height: 70px;  
@@ -560,7 +563,8 @@ body {
   background-position: center;  
 }
 
-.adv-add-img-souvenirs {
+.adv-add-img-souvenirs:before {
+  content: " ";
   display: block;
   margin-bottom: 19px;
   height: 76px;  
