@@ -250,10 +250,9 @@ body {
   fill: #756257;  
 }
 
-.navigation-link:focus {
+.navigation-link:focus:not(.round-green-wrapper) {
   color: #756257;
-  outline: 3px solid #83B3D3;
-  outline-offset: 5px;   
+  outline: 3px solid #83B3D3;  
   border-radius: 10px;
   padding: 3px 9px 3px 9px;  
   margin: -9px;    
@@ -276,6 +275,20 @@ body {
   position: relative;
 }
 
+.round-green:focus {
+  outline: 3px solid #83B3D3;  
+  border-radius: 10px;
+  padding: 3px 9px 3px 9px;  
+  margin: -9px;    
+}  
+
+.round-green-wrapper:focus {
+  outline: 3px solid #83B3D3;  
+  border-radius: 10px;
+  padding: 3px 9px 3px 9px;  
+  margin: -9px;  
+}  
+
 .round-green {
   color: #FFFFFF;
   display: block;
@@ -290,8 +303,7 @@ body {
   border-radius: 50%;
   position: absolute;
   top: -5px;
-  right: -14px;
-  z-index: 1;
+  right: -14px;  
 }
 
 .logo-link {
@@ -304,8 +316,6 @@ body {
   transform: translateX(-69px);
   margin-left: 50%;   
   z-index: 1;
-  /*outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;*/
 }
 
 .main-container {
@@ -940,8 +950,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*padding-left: 72px;
-  padding-right: 72px;*/
   padding-top: 31px;
   padding-bottom: 45px;  
 }
@@ -1012,6 +1020,13 @@ body {
   margin-right: 29px;
 }
 
+.footer-social-link {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid transparent;  
+}
 .footer-social-link svg {  
   fill:#83B3D3;  
 }
@@ -1020,18 +1035,21 @@ body {
   fill: #68A2CA;  
 }
 
+.footer-social-link:focus {  
+  border: 3px solid #83B3D3;  
+  border-radius: 10px;
+  top: -7px;
+  left: -10px; 
+}
+
 .footer-social-link:focus svg {  
   fill: #68A2CA;
-  outline: 3px solid #83B3D3;
-  outline-offset: 5px;   
-  border-radius: 10px;
-  padding: 3px 3px 3px 3px;  
-  /*
-  margin: -9px;  
-  display: block;
-  width: 40px;
-  height: 40px; 
-  */ 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;  
 }
 
 .footer-social-link:active svg {  
@@ -1061,7 +1079,8 @@ body {
 
 .footer-contakt-tel-link:focus {
   color: #756257;
-  outline: 3px solid #83B3D3;  
+  outline: 3px solid #83B3D3; 
+  outline-offset: 10px; 
   border-radius: 10px;
   display: block;
   width: 331px;
@@ -1081,8 +1100,23 @@ body {
   display: block;
   width: 115px;
   height: 33px; 
-  margin-left: auto;
-  background-image: url("../images/logo_htmlacademy.svg"); 
-  background-repeat: no-repeat;
-  background-position: center;  
+  margin-left: auto;  
+}
+
+.html-academy-link:hover svg {  
+  fill: #756257;  
+}
+
+.html-academy-link:focus {  
+  outline: 3px solid #83B3D3;
+  outline-offset: 10px;  
+  border-radius: 10px;  
+}
+
+.html-academy-link:focus svg {
+  fill: #756257;  
+}
+
+.html-academy-link:active svg {  
+  fill: rgba(117, 98, 87, 0.3); 
 }
