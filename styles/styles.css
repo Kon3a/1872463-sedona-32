@@ -275,19 +275,25 @@ body {
   position: relative;
 }
 
-.round-green:focus {
+/*.round-green:focus {
+  outline: 3px solid #83B3D3;  
+  border-radius: 10px;
+  padding: 3px 9px 3px 9px;  
+  margin: -9px;    
+}  */
+
+.round-green-wrapper:focus {
   outline: 3px solid #83B3D3;  
   border-radius: 10px;
   padding: 3px 9px 3px 9px;  
   margin: -9px;    
 }  
 
-.round-green-wrapper:focus {
-  outline: 3px solid #83B3D3;  
-  border-radius: 10px;
-  padding: 3px 9px 3px 9px;  
-  margin: -9px;  
-}  
+.round-green:focus {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;  
+}
 
 .round-green {
   color: #FFFFFF;
