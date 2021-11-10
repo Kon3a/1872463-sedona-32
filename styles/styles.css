@@ -252,7 +252,7 @@ body {
   fill: #756257;  
 }
 
-.navigation-link:focus:not(.round-green-wrapper) {
+.navigation-link:focus {
   color: #756257;
   outline: 3px solid #83B3D3;  
   border-radius: 10px;
@@ -272,25 +272,12 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 24px;
 }
-
+/*
 .round-green-wrapper {
   position: relative;
   border: 3px solid transparent;
 }
-
-.round-green-wrapper:focus {
-  border: 3px solid #83B3D3;   
-  border-radius: 10px;
-  padding: 3px 9px 3px 9px;  
-  margin: -9px;    
-}  
-
-.round-green:focus {
-  position: absolute;
-  top: -50px;
-  right: -50px; 
-}
-
+*/
 .round-green {
   color: #FFFFFF;
   display: block;
@@ -303,8 +290,8 @@ body {
   padding-left: 4px;
   background-color: #7DB54F;
   border-radius: 50%;
-  position: absolute;
-  top: -5px;
+  position: relative;
+  top: -30px;
   right: -14px;  
 }
 
