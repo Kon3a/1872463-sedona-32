@@ -247,12 +247,12 @@ body {
 }
 
 /* Состояния - Верхнее левое меню */
-.navigation-link:hover {
+.navigation-link:hover:not(.navigation-link-current) {
   color: #756257;
   fill: #756257;  
 }
 
-.navigation-link:focus {
+.navigation-link:focus:not(.navigation-link-current) {
   color: #756257;
   outline: 3px solid #83B3D3;  
   border-radius: 10px;
@@ -260,7 +260,7 @@ body {
   margin: -9px;    
 }
 
-.navigation-link:active {  
+.navigation-link:active:not(.navigation-link-current) {  
   color:rgba(117, 98, 87, 0.3);
   fill: rgba(117, 98, 87, 1);
 }
