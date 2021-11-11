@@ -106,17 +106,17 @@ body {
   border-radius: 10px;
 }
 
+.button-hotel-search:active,
+.button-hotel-search:focus,
 .button-hotel-search:hover {
   background-color: #615048;
 }
 
-.button-hotel-search:focus {
-  background-color: #615048;
+.button-hotel-search:focus {  
   outline: 3px solid #83B3D3;  
 }
 
-.button-hotel-search:active {
-  background-color: #615048;
+.button-hotel-search:active {  
   color: rgba(255, 255, 255, 0.3);  
 }
 
@@ -168,6 +168,20 @@ body {
   padding-bottom: 17px;
   width: 625px;
   border-radius: 4px;
+}
+
+.button-load-more:active,
+.button-load-more:focus,
+.button-load-more:hover {
+  background-color: #68A2CA;
+}
+
+.button-load-more:focus {  
+  outline: 3px solid #756257;
+}
+
+.button-load-more:active {  
+  color: rgba(255, 255, 255, 0.3);  
 }
 
 .page-header {
@@ -524,15 +538,23 @@ body {
   line-height: 21px;
 }
 
+.adv-add-img-housing {
+  position: relative;
+  top: 50px; 
+}
 
 .adv-add-img-housing:before {
+  position: absolute;
   content: " ";
-  display: block;
-  margin-bottom: 23px;
-  height: 72px;  
+  top: -98px;
+  left: 90px;
+  width: 75px;
+  height: 72px;
   background-image: url("../images/housing.svg"); 
-  background-repeat: no-repeat;
-  background-position: center;
+  /*display: block;*/
+  /*margin-bottom: 23px;*/  
+  /*background-repeat: no-repeat;
+  background-position: center;*/
 }
 
 .adv-add-img-food:before {
