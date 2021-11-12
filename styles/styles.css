@@ -131,6 +131,21 @@ body {
   border-radius: 0 10px 10px 0;
 }
 
+.button-subscribe-form:active,
+.button-subscribe-form:focus,
+.button-subscribe-form:hover {
+  background-color: #68A2CA;
+}
+
+.button-subscribe-form:focus {  
+  outline: 3px solid #756257;
+  outline-offset: -3px;
+}
+
+.button-subscribe-form:active {  
+  color: rgba(255, 255, 255, 0.3);  
+}
+
 .button-filter-apply {
   color: #ffffff;
   font-size: 16px;
@@ -629,7 +644,9 @@ body {
 }
 
 .subscribe-form {
-  margin: 0 auto;  
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;  
 }
 
 .subscribe-inner {
@@ -639,9 +656,47 @@ body {
   padding-bottom: 136px;  
 }
 
-.subscribe-form-field {
-  font-family: "PTSans";
+.subscribe-form-field {  
+  margin: 0;
+  width: 559px;
+  padding: 16px 19px 16px 22px;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #F2F2F2;    
   color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px 0 0 10px;
+  border: none;  
+}
+
+/* состояния инпута формы на Главной */
+.subscribe-form-field:hover {
+  background-color: #e5e5e5;
+  color:rgba(0, 0, 0, 0.6);
+}
+
+.subscribe-form-field:focus {
+  background-color: #e5e5e5;
+  color:rgba(0, 0, 0, 0.6);
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.subscribe-form-field:active {   
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.subscribe-form-field:invalid:not(:placeholder-shown):invalid { 
+  color: rgba(0, 0, 0, 0.6);  
+  outline: 2px solid #ff5757;
+  outline-offset: -2px;
+}
+
+/* состояния инпута формы на Гостиницы*/
+
+.subscribe-field-inner {
+  background-color: #f2f2f2;
 }
 
 .page-inner {
