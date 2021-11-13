@@ -748,17 +748,18 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;  
   list-style-type: none;
 }
 
-.breadcrumbs-container {
+.breadcrumbs-container {  
   padding-bottom: 45px;
 }
 
 .breadcrumbs-item {
-  padding: 3px 8px 3px 8px; 
+  /*padding: 3px 8px 3px 8px; */
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -769,13 +770,18 @@ body {
 .breadcrumbs-link:not(.breadcrumbs-link-current)::after {
   position: absolute;
   content: " ";
-  top: 14px;  
-  left: 54px;
+  top: 11px;  
+  left: 23px;
   width: 5px;
   height: 8px;  
   background-image: url("../images/nav-arrow.svg");
   background-repeat: none; 
   opacity: 30%;
+  pointer-events: none;
+}
+.breadcrumbs-link svg {
+  width: 12px;
+  height: 12px;
 }
 
 .breadcrumbs-link,
@@ -783,8 +789,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-style: normal;
-  font-weight: 400;
-  padding: 0 8px 0 8px;
+  font-weight: 400;  
   color: #ffffff;
   fill: rgba(255, 255, 255);
   text-decoration: none; 
@@ -797,7 +802,8 @@ body {
 }
 
 .breadcrumbs-link:focus {
-  outline: 3px solid #83b3d3;
+  border: 3px solid #83b3d3;
+  outline-offset: 4px;
   box-sizing: border-box;
   border-radius: 4px;  
   fill: rgba(255, 255, 255, 0.3);  
