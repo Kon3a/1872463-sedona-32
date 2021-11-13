@@ -771,7 +771,7 @@ body {
   position: absolute;
   content: " ";
   top: 11px;  
-  left: 23px;
+  left: 40px;
   width: 5px;
   height: 8px;  
   background-image: url("../images/nav-arrow.svg");
@@ -792,8 +792,9 @@ body {
   font-weight: 400;  
   color: #ffffff;
   fill: rgba(255, 255, 255);
+  padding: 3px 8px 3px 8px;
   text-decoration: none; 
-  border: transparent;
+  /*border: transparent;*/
 }
 
 .breadcrumbs-link:hover {
@@ -804,7 +805,8 @@ body {
 .breadcrumbs-link:focus {
   outline: 3px solid #83b3d3;
   outline-offset: 4px;
-  box-sizing: border-box;
+  padding: 2px 8px 3px 8px;
+  /*box-sizing: border-box;*/
   border-radius: 4px;  
   fill: rgba(255, 255, 255, 0.3);  
 }
