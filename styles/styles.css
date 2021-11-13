@@ -159,6 +159,21 @@ body {
   margin-bottom: 20px;
 }
 
+.button-filter-apply:hover {
+  background-color: #68a2ca;
+  border: 3px solid #ffffff;
+}
+
+.button-filter-apply:focus {
+  background-color: #68a2ca;
+}
+
+.button-filter-apply:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .button-filter-reset {
   font-size: 18px;
   line-height: 23px;
@@ -669,7 +684,6 @@ body {
   border: none;  
 }
 
-/* состояния инпута формы на Главной */
 .subscribe-form-field:hover {
   background-color: #e5e5e5;
   color:rgba(0, 0, 0, 0.6);
@@ -692,8 +706,6 @@ body {
   outline: 2px solid #ff5757;
   outline-offset: -2px;
 }
-
-/* состояния инпута формы на Гостиницы*/
 
 .subscribe-field-inner {
   background-color: #f2f2f2;
