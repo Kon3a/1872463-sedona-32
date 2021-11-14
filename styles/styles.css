@@ -893,6 +893,75 @@ body {
   font-weight: 400;
   color: #ffffff;
 }
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: #ffffff;  
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;  
+  border-radius: 5px;  
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.25);
+} 
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(255, 255, 255, 0.4);
+} 
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.catalog-filter-input {
+  margin: 0;
+  font: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.catalog-filter-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-input:focus {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #81b3d2;   
+}
+
+.catalog-filter-input:active {
+  background-color: #756257;
+}
 
 .sorting-type-container {
   display: flex;
