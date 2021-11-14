@@ -942,7 +942,7 @@ body {
 
 .range-input {
   margin: 0;
-  width: 132px;
+  width: 113px;
   font: inherit;
   font-size: 18px;
   line-height: 23px;
@@ -950,6 +950,8 @@ body {
   background-color: transparent;  
   border: 2px solid #ffffff;
   outline: none;
+  appearance: textfield;
+  padding: 11px 11px 11px 11px;
 }
 
 .range-input::placeholder {
@@ -998,7 +1000,7 @@ body {
   position: absolute;
   display: block;
   content: " ";
-  top: 0;
+  top: 10px;
   left: 115px;
 }
 
