@@ -981,6 +981,7 @@ body {
   margin: 0;
 }
 
+.range-input-max,
 .range-input-min {
   position: relative;
 }
@@ -992,12 +993,13 @@ body {
   color: rgba(255, 255, 255, 0.3);  
 }
 
-.label-min::after {
+.label-max,
+.label-min {
   position: absolute;
   display: block;
   content: " ";
-  top: 25px;
-  left: 25px;
+  top: 0;
+  left: 115px;
 }
 
 .sorting-type-container {
