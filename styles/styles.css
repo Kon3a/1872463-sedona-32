@@ -946,13 +946,18 @@ body {
   font: inherit;
   font-size: 18px;
   line-height: 23px;
-  color: #ffffff;
-  background-color: transparent;
+  color: #ffffff; 
+  background-color: transparent;  
   border: 2px solid #ffffff;
+  outline: none;
+}
+
+.range-input::placeholder {
+  color: #ffffff;
 }
 
 .range-input:hover {
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);  
 }
 
 .range-input:focus {
