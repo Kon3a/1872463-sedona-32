@@ -969,7 +969,7 @@ body {
   background-color: #756257;
 }
 
-.range-wrapper-inputs {
+.range-wrapper-inputs {  
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
@@ -981,25 +981,24 @@ body {
   margin: 0;
 }
 
-range-input-min {
+.range-input-min {
   position: relative;
 }
+
 .catalog-filter-label {
   font: inherit;
   font-size: 18px;
   line-height: 23px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);  
 }
 
-label-min::after {
+.label-min::after {
   position: absolute;
   display: block;
   content: " ";
   top: 25px;
   left: 25px;
 }
-
-
 
 .sorting-type-container {
   display: flex;
