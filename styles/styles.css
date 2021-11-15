@@ -779,6 +779,7 @@ body {
   opacity: 30%;
   pointer-events: none;
 }
+
 .breadcrumbs-link svg {
   width: 12px;
   height: 12px;
@@ -793,8 +794,7 @@ body {
   color: #ffffff;
   fill: rgba(255, 255, 255);
   padding: 3px 8px 3px 8px;
-  text-decoration: none; 
-  /*border: transparent;*/
+  text-decoration: none;   
 }
 
 .breadcrumbs-link:hover {
@@ -806,7 +806,6 @@ body {
   outline: 3px solid #83b3d3;
   outline-offset: 4px;
   padding: 2px 8px 3px 8px;
-  /*box-sizing: border-box;*/
   border-radius: 4px;  
   fill: rgba(255, 255, 255, 0.3);  
 }
@@ -1059,8 +1058,7 @@ body {
   top: 5px;
   left: 4px;
   width: 12px;
-  height: 10px;
-  /*background-color: #242424;*/
+  height: 10px;  
   content: "";
   background-image: url("../images/tick.svg");
   background-repeat: no-repeat;
@@ -1080,6 +1078,66 @@ body {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 287px;
+  margin-right: auto;
+}
+
+/* Control */
+.select-control {
+  width: 100%;
+  padding: 13px 5px 14px 14px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  background-color: #FFFFFF;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;  
+}
+/*
+.select(.select-arrow svg)::after  {
+  position: absolute;
+  content: " ";
+  top: 24px;
+  left: 25px;
+  width: 12px;
+  height: 7px;  
+  background-image: url("../images/nav-arrow.svg");
+  background-repeat: none;
+  fill: rgba(199, 13, 13, 0.3);  
+}
+
+
+.select-arrow svg {
+  position: absolute;
+  top: 24px;
+  left: 257px;
+  content: "";
+  fill: rgba(0, 0, 0, 0.3);  
+}
+*/
+.select-control:hover,
+.select-control:focus {
+  border-color: #83b3d3;
+}
+
+.select-control:focus {  
+  outline: none;
+}
+
+.select-control:active {
+  color: rgba(51, 51, 51, 0.3);
+  border-color: #e6e6e6;
 }
 
 .sorting-type-container {
