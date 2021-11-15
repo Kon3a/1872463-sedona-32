@@ -940,7 +940,8 @@ body {
   box-shadow: 0 7px 15px 0 rgba(255, 255, 255, 0.4);
 } 
 
-.range-input {
+.range-input-left,
+.range-input-right {
   margin: 0;
   width: 113px;
   font: inherit;
@@ -954,20 +955,35 @@ body {
   padding: 11px 11px 11px 11px;
 }
 
-.range-input::placeholder {
+.range-input-left {
+  border-radius: 4px 0 0 4px;   
+}
+
+.range-input-right {  
+  border-radius: 0 4px 4px 0;
+  margin-left: -2px;   
+}
+
+.range-input-left::placeholder,
+.range-input-right::placeholder {
   color: #ffffff;
 }
 
-.range-input:hover {
+.range-input-left:hover,
+.range-input-right:hover {
   border: 2px solid rgba(255, 255, 255, 0.6);  
 }
 
-.range-input:focus {
+.range-input-left:focus,
+.range-input-right:focus {
   border: 2px solid #ffffff;
-  box-shadow: 0 0 0 3px #81b3d2;     
+  box-shadow: 0 0 0 3px #81b3d2;
+  outline: 2px solid #81b3d2;
+  outline-offset: -4px;     
 }
 
-.range-input:active {
+.range-input-left:active,
+.range-input-right:active {
   background-color: #756257;
 }
 
@@ -977,8 +993,10 @@ body {
   margin-bottom: 32px;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-input-left::-webkit-outer-spin-button,
+.range-input-left::-webkit-inner-spin-button,
+.range-input-right::-webkit-outer-spin-button,
+.range-input-right::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1002,6 +1020,66 @@ body {
   content: " ";
   top: 10px;
   right: 10px;
+}
+
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;  
+}
+
+.control-mark:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-mark:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control-mark:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  /*background-color: #242424;*/
+  content: "";
+  background-image: url("../images/tick.svg");
+  background-repeat: no-repeat;
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
 }
 
 .sorting-type-container {
