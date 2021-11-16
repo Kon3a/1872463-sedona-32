@@ -1632,19 +1632,45 @@ body {
 /*Поповер*/
 .popover {
   position: absolute;
+  min-height: 150px;
   top: 41px;
   right: -180px;
   z-index: 2;
   box-sizing: border-box;
   width: 400px;
-  padding: 25px;  
-  border: 1px solid #e6e6e6;
+  /*padding-top: 25px;*/  
+  /*border: 1px solid #e6e6e6;*/
   border-radius: 20px;
-  background-color: #FFFFFF;
-  min-height: 150px;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);  
+  /*background-color: #ffffff;*/  
+  /*box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);*/
 }
 
+.popover-shadow {
+  border-radius: 20px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.modal-list-wrapper {
+  width: 400px;
+  padding-top: 25px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0 0 ;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6; 
+  border-top: 1px solid #e6e6e6; 
+}
+
+/*
+.popover-triangle  {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -5px;
+  left: 186px;
+  background-color: #f00909;
+  transform: skew(75deg);
+}
+*/
 .modal-title {
   font-size: 18px;  
   font-weight: 700;
@@ -1668,7 +1694,8 @@ body {
 }
 
 .modal-list {
-  margin: 0;
+  margin-left: 25px;
+  margin-right: 25px;
   padding: 0;
   list-style-type: none;
 }
@@ -1676,11 +1703,12 @@ body {
 .modal-list-item {
   display: grid;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   grid-template-columns: 48px 17px 250px 16px;
   grid-template-rows: 24px 24px;
   align-items: start;  
-  margin-bottom: 25px;
+  /*margin-bottom: 25px;*/
+  padding-bottom: 25px;
 }
 
 .modal-image {
@@ -1706,4 +1734,38 @@ body {
 .modal-delet {
   grid-column: 4/5;
   grid-row: 1/2;
+}
+
+.link-all-favorites {
+  display: block;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #726257;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 402px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;  
+  border-radius: 0 0 20px 20px;
+  border-left: 1px solid #726257;
+  border-right: 1px solid #726257; 
+  border-bottom: 1px solid #726257; 
+}
+
+.link-all-favorites:hover, 
+.link-all-favorites:focus,
+.link-all-favorites:active {
+  background-color: #615048;
+}
+
+.link-all-favorites:focus {
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.link-all-favorites:active {
+  color: rgba(255, 255, 255, 0.3)  
 }
