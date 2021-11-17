@@ -326,8 +326,8 @@ body {
   padding: 3px 9px 3px 9px;  
   margin-left: -9px;  
   margin-right: -9px;
-  margin-top: -9px;
-  margin-bottom: -9px;
+  margin-top: -3px;
+  margin-bottom: -3px;
 }
 
 .navigation-link:active:not(.navigation-link-current) {  
@@ -1687,6 +1687,7 @@ body {
   color: #333333;
 }
 
+
 .popover-link-title {
   text-decoration: none;
 }
@@ -1837,8 +1838,8 @@ body {
 
 .popover-link-favorites {
   display: block;  
-  /*width: fit-content;*/
-  /*width: 300px; */ 
+  width: fit-content;
+  width: 300px;  
   text-decoration: none;   
   border-radius: 10px;
 }
@@ -1853,9 +1854,9 @@ body {
   outline-offset: 10px;
   border-radius: 10px;  
 }
-/*
+
 .popover-link-favorites:active {
   background-color: #ffffff;
   opacity: 30%;    
 }
-*/
+
