@@ -1641,12 +1641,23 @@ body {
   position: absolute;
   min-height: 150px;
   top: 41px;
-  right: -180px;
+  right: -190px;
   z-index: 2;
   box-sizing: border-box;
   width: 400px;  
   border-radius: 20px;
   display: none;  
+}
+
+.popover::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: 190px;
+  width: 74px;
+  height: 70px;  
+  background-image: url("../images/popover-triangle.svg");
+  background-repeat: no-repeat;
 }
 
 .popover-open {
@@ -1658,7 +1669,7 @@ body {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.modal-list-wrapper {
+.popover-list-wrapper {
   width: 400px;
   padding-top: 25px;
   background-color: #ffffff;
@@ -1668,36 +1679,36 @@ body {
   border-top: 1px solid #e6e6e6; 
 }
 
-.modal-title {
+.popover-title {
   font-size: 18px;  
   font-weight: 700;
   margin: 0;  
   color: #333333;
 }
 
-.modal-link-title {
+.popover-link-title {
   text-decoration: none;
 }
 
-.modal-type {
+.popover-type {
   font-size: 16px;  
   font-weight: 400;
   color: #333333;
   margin: 0;
 }
 
-.modal-delet svg {
+.popover-delet svg {
   fill: rgba(0, 0, 0, 0.2);
 }
 
-.modal-list {
+.popover-list {
   margin-left: 25px;
   margin-right: 25px;
   padding: 0;
   list-style-type: none;
 }
 
-.modal-list-item {
+.popover-list-item {
   display: grid;
   margin: 0;
   padding: 0;
@@ -1707,24 +1718,25 @@ body {
   padding-bottom: 25px;
 }
 
-.modal-image {
+.popover-image {
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
-.modal-link-title {  
+.popover-link-title {  
   grid-column: 3/4;
   grid-row: 1/2;
 }
 
-.modal-type {
+.popover-type {
   grid-column: 3/4;
   grid-row: 2/3;
 }
 
-.modal-delet {
+.popover-delet {
   grid-column: 4/5;
   grid-row: 1/2;
+  align-self: end;
 }
 
 .link-all-favorites {
@@ -1761,7 +1773,7 @@ body {
   color: rgba(255, 255, 255, 0.3)  
 }
 
-.modal-delet {  
+.popover-delet {  
   width: 16px;
   height: 16px;
   padding: 0;
@@ -1770,7 +1782,7 @@ body {
   cursor: pointer;
 }
 
-.modal-delet svg {  
+.popover-delet svg {  
   width: 16px;
   height: 16px;
   background: none;
@@ -1778,12 +1790,12 @@ body {
   cursor: pointer;
 }
 
-.modal-delet:hover svg,
-.modal-delet:focus svg {
+.popover-delet:hover svg,
+.popover-delet:focus svg {
   fill: #000000;
 }
 
-.modal-delet:focus svg {
+.popover-delet:focus svg {
   display: block;
   width: 16px;
   height: 16px;
@@ -1792,23 +1804,11 @@ body {
   border-radius: 2px;  
 }
 
-.modal-delet:activ svg {
+.popover-delet:activ svg {
   fill: rgba(51, 51, 51, 0.3);
 }
 
-/*
-.modal-link-state {
-  display: block;
-  width: fit-content; 
-}
-
-
-.modal-link-state:hover {
-  opacity: 60%;
-} 
-*/
-
-.modal-link-title::before {
+.popover-link-title::before {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -1819,24 +1819,19 @@ body {
   content: "";
 }
 
-.modal-link-title:hover::before {
+.popover-link-title:hover::before {
   background-color: #ffffff;
   opacity: 60%;  
 }
 
-.modal-link-title:focus::before {
+.popover-link-title:focus::before {
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px; 
   outline: none;
 }
 
-.modal-link-title:active::before {
+.popover-link-title:active::before {
   background-color: #ffffff;
   opacity: 30%;    
 }
-
-
-
-
-
