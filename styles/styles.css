@@ -378,15 +378,15 @@ body {
 
 .main-container {
   flex-grow: 1;
-  margin: 0 auto;
-  background-color: #ffffff;
-  background-image: url("../images/catalog-background.jpg");
-  background-repeat: no-repeat;
+  margin: 0 auto;  
 }
 
 .filter-hotels-container {
   padding-top: 35px;  
   padding-bottom: 60px;  
+  background-color: #88a4b9;
+  background-image: url("../images/catalog-background.jpg");
+  background-repeat: no-repeat;
 }
 
 .page-container {
