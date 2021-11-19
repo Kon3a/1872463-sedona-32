@@ -202,8 +202,7 @@
           </section>
           <!--Переход на страницу поиска гостиниц End -->
           <!--Рассылка Begin -->
-          <section class="subscribe">
-            <!-- <div class="subscribe-bg"> -->
+          <section class="subscribe">            
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-description">
               Только полезная информация и никакого спама,<br />честное
@@ -285,7 +284,7 @@
       </footer>
     </div>
     <!-- Модальное окно -->
-    <div class="modal-container modal-container-close">
+    <div class="modal-container"><!--modal-container-close -->
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -293,28 +292,46 @@
         <section class="modal-content">
           <h2 class="modal-title title-h2">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <label class="search-type for="arrival-data">Дата заезда</label>
-              <input class="search-form-field field" type="date" id="arrival-data" name="arrival-data" placeholder="27 апреля 2020 года">
+            <fieldset class="search-group-data">
+              <p class="field-group-data">
+                <label class="search-data" for="arrival-data">
+                  <span class="data-mark-label">Дата заезда:</span> 
+                  <input class="search-form-field visually-hidden" type="date" id="arrival-data" name="arrival-data" placeholder="27 апреля 2020 года">
+                <span class="data-mark"></span>
+                <span class="arrival-data-mark">27 апреля 2020 года</span>
+                <span class="message message-error">Мы не можем отправить вас в прошлое</span>
+                </label>
+              </p>
+              
+              <p class="field-group-data">
+                <label class="search-data" for="departure-data">
+                  <span class="data-mark-label">Дата выезда:</span>
+                  <input class="search-form-field visually-hidden" type="date" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
+                  <span class="data-mark"></span>
+                  <span class="departure-data-mark">1 сентября 2021 года</span>
+                  <span class="message message-warning">На эти даты есть свободные номера. Пока есть</span>
+                </label>
+              </p>  
+                
+            </fieldset>
+            <fieldset class="field-group-people">
+            <p class="field-group-people">
+              <label class="search-people" for="departure-data">
+                <span class="people-mark-label">Взрослые:</span>
+                <input class="search-form-field visually-hidden" type="number" id="departure-data" name="departure-data" placeholder="2">
+                <span class="people-mark"></span>
+              </label>
             </p>
-            <span class="message message-error">Мы не можем отправить вас в прошлое</span>
-            <p class="field-group">
-              <label class="search-type" for="departure-data">Дата выезда</label>
-              <input class="search-form-field field" type="date" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
+            <p class="field-group-people">
+              <label class="search-people" for="departure-data">
+                <span class="people-mark-label">Дети:</span>
+                <input class="search-form-field visually-hidden" type="number" id="departure-data" name="departure-data" placeholder="1">
+                <span class="people-mark"></span>
+              </label>
             </p>
-            <span class="message message-warning">На эти даты есть свободные номера. Пока есть</span>
-            <p class="field-group">
-              <label class="search-type" for="departure-data">Взрослые</label>
-              <input class="search-form-field field" type="number" id="departure-data" name="departure-data" placeholder="2">
-            </p>
-            <p class="field-group">
-              <label class="search-type" for="departure-data">Дети</label>
-              <input class="search-form-field field" type="number" id="departure-data" name="departure-data" placeholder="1">
-            </p>                        
-          </form>
-          <!-- <div class="button-find-container"> -->
+            </fieldset>                         
+          </form>          
             <a class="button button-find" href="#">Найти</a>
-          <!-- </div> -->
         </section>
       </div>
 
