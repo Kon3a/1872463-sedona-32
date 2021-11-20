@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -5,7 +6,8 @@
     <title>Разметка главной страницы учебного проекта "Седона"</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
+    <base href="https://htmlacademy-htmlcss.github.io/1872463-sedona-32/11/">
+</head>
   <body>
     <div class="container-shadow">
       <header class="page-header">
@@ -202,7 +204,8 @@
           </section>
           <!--Переход на страницу поиска гостиниц End -->
           <!--Рассылка Begin -->
-          <section class="subscribe">            
+          <section class="subscribe">
+            <!-- <div class="subscribe-bg"> -->
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-description">
               Только полезная информация и никакого спама,<br />честное
@@ -265,7 +268,7 @@
           <section class="html-academy">
             <h2 class="visually-hidden">Логотип HTML Academy</h2>
             <a class="html-academy-link" href="https://htmlacademy.ru/">
-              <svg width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 12.9V15.5H2.5V12.9H0Z" />
                 <path d="M11.6 4.5C10 4.5 8.80002 5.2 8.00002 6.2H7.90002V0H5.90002V15.5H7.90002V10.2C7.90002 8.1 9.20002 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />
                 <path d="M26.6 4.79998H21.8V1.09998H19.8V4.89998H17.9V6.89998H19.8V12.9C19.8 14.6 20.8 15.6 22.5 15.6H26.6V13.6H22.9C22.2 13.6 21.8 13.2 21.8 12.5V6.79998H26.6V4.79998Z" />
@@ -282,9 +285,9 @@
             </a>                         
           </section>
       </footer>
-    </div>
+    </div>      
     <!-- Модальное окно -->
-    <div class="modal-container"><!--modal-container-close -->
+    <div class="modal-container -modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -292,46 +295,30 @@
         <section class="modal-content">
           <h2 class="modal-title title-h2">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="search-group-data">
-              <p class="field-group-data">
-                <label class="search-data" for="arrival-data">
-                  <span class="data-mark-label">Дата заезда:</span> 
-                  <input class="search-form-field visually-hidden" type="date" id="arrival-data" name="arrival-data" placeholder="27 апреля 2020 года">
-                <span class="data-mark"></span>
-                <span class="arrival-data-mark">27 апреля 2020 года</span>
-                <span class="message message-error">Мы не можем отправить вас в прошлое</span>
-                </label>
-              </p>
-              
-              <p class="field-group-data">
-                <label class="search-data" for="departure-data">
-                  <span class="data-mark-label">Дата выезда:</span>
-                  <input class="search-form-field visually-hidden" type="date" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
-                  <span class="data-mark"></span>
-                  <span class="departure-data-mark">1 сентября 2021 года</span>
-                  <span class="message message-warning">На эти даты есть свободные номера. Пока есть</span>
-                </label>
-              </p>  
-                
-            </fieldset>
-            <fieldset class="field-group-people">
-            <p class="field-group-people">
-              <label class="search-people" for="departure-data">
-                <span class="people-mark-label">Взрослые:</span>
-                <input class="search-form-field visually-hidden" type="number" id="departure-data" name="departure-data" placeholder="2">
-                <span class="people-mark"></span>
-              </label>
+            <p class="field-group-data">
+              <label class="search-type-data" for="arrival-data">Дата заезда:</label>
+              <input class="search-form-data" type="text" id="arrival-data" name="arrival-data" placeholder="27 апреля 2020 года">
+              <span class="message message-error">Мы не можем отправить вас в прошлое</span>
+            </p>            
+            <p class="field-group-data">
+              <label class="search-type-data" for="departure-data">Дата выезда:</label>
+              <input class="search-form-data" type="text" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
+              <span class="message message-warning">На эти даты есть свободные номера. Пока есть</span>
             </p>
+            
             <p class="field-group-people">
-              <label class="search-people" for="departure-data">
-                <span class="people-mark-label">Дети:</span>
-                <input class="search-form-field visually-hidden" type="number" id="departure-data" name="departure-data" placeholder="1">
-                <span class="people-mark"></span>
-              </label>
-            </p>
-            </fieldset>                         
+              <label class="search-type-people search-type-people-adults" for="people-adults">Взрослые:</label>
+              <input class="search-form-people search-form-people-adults" type="text" id="peolple-adults" name="people-adults" placeholder="2">
+              <label class="search-type-people search-type-people-child" for="peolple-child">Дети:</label>
+              <input class="search-form-people search-form-people-child" type="text" id="people-child" name="peolple-child" placeholder="1">
+              <span class="tooltip-info">
+                <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
+                </svg>
+              </span>
+            </p>                        
           </form>          
-            <a class="button button-find" href="#">Найти</a>
+            <a class="button button-find" href="#">Найти</a>          
         </section>
       </div>
 
