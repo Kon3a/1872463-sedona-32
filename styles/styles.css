@@ -1868,7 +1868,6 @@ margin-bottom: 99px;
 margin-left: -2px;
 }
 
-
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -1876,14 +1875,29 @@ margin-left: -2px;
   right: 70px;
   width: 53px;
   height: 53px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
+  cursor: pointer;  
 } 
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  opacity: 30%;
+}
+
 
 .field-group-data {
   display: grid;  
@@ -1936,6 +1950,7 @@ margin-left: -2px;
   padding: 0;
   grid-template-columns: 155px 133px 56px 54px 43px 133px;
   grid-template-rows: 50px 40px;  
+  position: relative;
 }
 
 .search-type-people-adults {
@@ -1952,12 +1967,6 @@ margin-left: -2px;
   align-self: center;
 }
 
-.tooltip-info {
-  grid-column: 5/6;
-  grid-row: 1/2;
-  align-self: center;
-}
-
 .search-form-people-child {
   grid-column: 6/7;
 }
@@ -1969,7 +1978,7 @@ margin-left: -2px;
   color: #000000;  
 }
 
-.search-form-people {  
+.search-form-people {    
   margin: 0;
   font: inherit;
   font-size: 18px;
@@ -1992,14 +2001,117 @@ margin-left: -2px;
   border: none;
   background-color: #68a2ca;
   border-radius: 50%;
+  background-image: url("../images/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  grid-column: 5/6;
+  grid-row: 1/2;
+  align-self: center;
+  outline:none;
 }
 
-.tooltip-info svg {
-  position: relative;
-  top: -1px;
-  left: 12px; 
-  fill: #ffffff;  
+/*  Кнопки Плюс - Минус */
+.wrapper-plus-minus-adults {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  position: absolute;
+  top: -38px;
+  left: 0px;
 }
+
+.wrapper-plus-minus-child {
+  grid-column: 6/7;
+  grid-row: 2/3;
+  align-self: center;
+  position: absolute;
+  top: -38px;
+  left: 0px;
+}
+
+.wrapper-plus-minus-adults,
+.wrapper-plus-minus-child {
+  display: flex;
+  width: 99px;
+  justify-content: space-between;
+  margin-right:19px;
+  margin-left:19px;
+}
+
+.minus-adults {
+  margin-right: auto;
+}
+
+.minus-adults:hover,
+.minus-child:hover {
+  background-image: url("../images/minus-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plus-adults:hover,
+.plus-child:hover {
+  background-image: url("../images/plus-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minus-adults:focus,
+.minus-child:focus {
+  background-image: url("../images/minus-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.plus-adults:focus,
+.plus-child:focus {
+  background-image: url("../images/plus-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #83b3d3;
+  border-radius: 4px; 
+  outline: none; 
+}
+
+.minus-adults:active,
+.minus-child:active {
+  opacity: 20%;
+}
+
+.plus-adults:active,
+.plus-child:active {
+  opacity: 20%;
+}
+
+.plus-child,
+.plus-adults {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;  
+}
+
+.minus-child,
+.minus-adults {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;  
+}
+
+/*  Кнопки Плюс - Минус END*/
 
 .search-form-people::placeholder,
 .search-form-data::placeholder {
@@ -2032,13 +2144,13 @@ margin-left: -2px;
 .button-find {
   display: block;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 40px;
   color: #ffffff;
   background-color: #83b3d3;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 575px;
   border-radius: 10px;
 }

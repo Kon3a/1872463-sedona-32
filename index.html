@@ -289,7 +289,7 @@
     <!-- Модальное окно -->
     <div class="modal-container -modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -304,21 +304,27 @@
               <label class="search-type-data" for="departure-data">Дата выезда:</label>
               <input class="search-form-data" type="text" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
               <span class="message message-warning">На эти даты есть свободные номера. Пока есть</span>
-            </p>
-            
-            <p class="field-group-people">
+            </p>            
+            <p class="field-group-people">              
               <label class="search-type-people search-type-people-adults" for="people-adults">Взрослые:</label>
               <input class="search-form-people search-form-people-adults" type="text" id="peolple-adults" name="people-adults" placeholder="2">
               <label class="search-type-people search-type-people-child" for="peolple-child">Дети:</label>
               <input class="search-form-people search-form-people-child" type="text" id="people-child" name="peolple-child" placeholder="1">
-              <span class="tooltip-info">
-                <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
-                </svg>
+              <button class="tooltip-info" type="button">
+                <span class="visually-hidden">Дополнительная информация</span>
+              </button>              
+              <span class="wrapper-plus-minus-adults">
+                <button class="minus-adults" type="button"><span class="visually-hidden">Кнопка минус</span></button>
+                <button class="plus-adults" type="button"><span class="visually-hidden">Кнопка плюс</span></button>             
               </span>
-            </p>                        
+              <span class="wrapper-plus-minus-child">
+                <button class="minus-child" type="button"><span class="visually-hidden">Кнопка минус</span></button>
+                <button class="plus-child" type="button"><span class="visually-hidden">Кнопка плюс</span></button>             
+              </span>
+            </p>
+            <button class="button button-find" type="button">Найти</a>                        
           </form>          
-            <a class="button button-find" href="#">Найти</a>          
+            
         </section>
       </div>
 
