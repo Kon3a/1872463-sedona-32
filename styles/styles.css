@@ -1900,11 +1900,26 @@ margin-left: -2px;
 
 
 .field-group-data {
+  position: relative;
   display: grid;  
   margin: 0;
   padding: 0;
   grid-template-columns: 155px 401px;
-  grid-template-rows: 50px 40px;
+  grid-template-rows: 50px 40px;  
+}
+
+.field-group-data::after {  
+  position: absolute;
+  display: block;
+  content: " ";
+  top: 17px;  
+  right: 19px;
+  width: 16px;
+  height: 15px;  
+  background-image: url("../images/date.svg");
+  background-repeat: no-repeat; 
+  opacity: 30%;
+  pointer-events: none;  
 }
 
 .search-type-data {
@@ -1917,15 +1932,16 @@ margin-left: -2px;
   align-self: center;
 }
 
-.search-form-data {  
+.search-form-data {    
+  display: inline-block;
   margin: 0;
   font: inherit;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
   width: 401px;  
-  padding-left: 19px;  
-  background-color: #f2f2f2;  
+  padding-left: 19px;
+  background-color: #f2f2f2;   
   border-radius: 4px;
   border: none;  
   grid-column: 2/3;
