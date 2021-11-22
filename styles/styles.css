@@ -1687,7 +1687,6 @@ body {
   color: #333333;
 }
 
-
 .popover-link-title {
   text-decoration: none;
 }
@@ -1858,6 +1857,7 @@ body {
 }
 
 .modal-content {
+  position: relative;
   padding: 70px;
 }
 
@@ -1897,7 +1897,6 @@ margin-left: -2px;
   background-color: #e6e6e6;
   opacity: 30%;
 }
-
 
 .field-group-data {
   position: relative;
@@ -2182,4 +2181,50 @@ margin-left: -2px;
 .button-find:active {  
   color: rgba(255, 255, 255, 0.3);  
 }
+
+/* Поповер в модальном окне */
+
+.modal-popover {
+  position: absolute;  
+  width: 256px;
+  min-height: 100px; 
+  bottom: 33px;
+  right: 106px;  
+  box-sizing: border-box;
+  display: none;    
+  border-radius: 10px;  
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-popover-open {
+  display: block;  
+} /* включает поповер */
+
+.modal-popover::before {
+  position: absolute;
+  content: " ";
+  top: -9px;
+  left: 118px;
+  width: 20px;
+  height: 10px;   
+  background-image: url("../images/triangle-black.png");
+  background-repeat: no-repeat;
+}
+
+.modal-popover-content {
+  padding: 15px  18px  18px  22px;
+}
+
+.modal-popover-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400; 
+  color: #ffffff; 
+  text-align: left;
+  text-transform: none;
+}
+
+
 
