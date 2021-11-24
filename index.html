@@ -305,30 +305,30 @@
               <input class="search-form-data" type="text" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
               <span class="message message-warning">На эти даты есть свободные номера. Пока есть</span>
             </div>            
-            <div class="field-group-people">              
+            <div class="field-group-people">         
               <label class="search-type-people search-type-people-adults" for="people-adults">Взрослые:</label>
-              <input class="search-form-people search-form-people-adults" type="text" id="peolple-adults" name="people-adults" placeholder="2">
-              <label class="search-type-people search-type-people-child" for="peolple-child">Дети:</label>
-              <input class="search-form-people search-form-people-child" type="text" id="people-child" name="peolple-child" placeholder="1">
-              <div class="tooltip-info"> 
-                <span class="visually-hidden">Дополнительная информация</span>
-              </div>              
-              <span class="wrapper-plus-minus-adults">
+              <div class="plus-minus-wrapper">
+                <input class="search-form-people search-form-people-adults" type="text" id="people-adults" name="people-adults" placeholder="2">              
                 <button class="minus-adults" type="button"><span class="visually-hidden">Кнопка минус</span></button>
-                <button class="plus-adults" type="button"><span class="visually-hidden">Кнопка плюс</span></button>             
-              </span>
-              <span class="wrapper-plus-minus-child">
+                <button class="plus-adults" type="button"><span class="visually-hidden">Кнопка плюс</span></button>      
+              </div>
+              <label class="search-type-people search-type-people-child" for="people-child">Дети:</label>
+              <div class="plus-minus-wrapper">
+                <input class="search-form-people search-form-people-child" type="text" id="people-child" name="people-child" placeholder="1">
                 <button class="minus-child" type="button"><span class="visually-hidden">Кнопка минус</span></button>
-                <button class="plus-child" type="button"><span class="visually-hidden">Кнопка плюс</span></button>             
-              </span>
+                <button class="plus-child" type="button"><span class="visually-hidden">Кнопка плюс</span></button> 
+              </div>
+              <div class="tooltip-info">
+                <span class="visually-hidden">Дополнительная информация</span>
+                <div class="modal-popover modal-popover-open">
+                  <div class="modal-popover-content">
+                    <p class="modal-popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
+                </div>
+              </div>              
             </div>
             <button class="button button-find" type="submit">Найти</button>                        
-          </form>
-          <div class="modal-popover modal-popover-open">
-            <div class="modal-popover-content">
-              <p class="modal-popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-            </div>
-          </div>               
+          </form>       
         </section>
       </div>
     </div>

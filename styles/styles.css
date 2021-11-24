@@ -2000,7 +2000,8 @@ margin-left: -2px;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  width: 133px;  
+  width: 133px;
+  height: 50px;  
   background-color: #f2f2f2;  
   border-radius: 4px;
   border: none;
@@ -2011,6 +2012,7 @@ margin-left: -2px;
 }
 
 .tooltip-info {
+  position: relative;
   width: 25px;
   height: 25px;
   border: none;
@@ -2027,6 +2029,8 @@ margin-left: -2px;
 }
 
 /*  Кнопки Плюс - Минус */
+
+/*
 .wrapper-plus-minus-adults {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -2053,9 +2057,42 @@ margin-left: -2px;
   margin-right:19px;
   margin-left:19px;
 }
+*/
 
+.plus-minus-wrapper {
+  width: 133px;
+  height: 50px;
+  position: relative;
+}
+
+.plus-child,
+.plus-adults {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;  
+}
+
+.minus-child,
 .minus-adults {
-  margin-right: auto;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;  
 }
 
 .minus-adults:hover,
@@ -2100,30 +2137,6 @@ margin-left: -2px;
 .plus-adults:active,
 .plus-child:active {
   opacity: 20%;
-}
-
-.plus-child,
-.plus-adults {
-  width: 25px;
-  height: 25px;
-  border: none;
-  background-color: transparent;
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;  
-}
-
-.minus-child,
-.minus-adults {
-  width: 25px;
-  height: 25px;
-  border: none;
-  background-color: transparent;
-  background-image: url("../images/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;  
 }
 
 /*  Кнопки Плюс - Минус END*/
@@ -2188,8 +2201,8 @@ margin-left: -2px;
   position: absolute;  
   width: 256px;
   min-height: 100px; 
-  bottom: 33px;
-  right: 106px;  
+  top: 43px;
+  left: -115px;  
   box-sizing: border-box;
   display: none;    
   border-radius: 10px;  
