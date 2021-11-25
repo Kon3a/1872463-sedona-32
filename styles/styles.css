@@ -961,7 +961,8 @@ body {
   border: 2px solid #ffffff;
   outline: none;
   appearance: textfield;
-  padding: 11px 11px 11px 11px;
+  box-sizing: border-box;
+  padding: 11px 30px 11px 11px;
 }
 
 .range-input-left {
