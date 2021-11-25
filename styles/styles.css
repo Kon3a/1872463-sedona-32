@@ -2016,7 +2016,10 @@ margin-left: -2px;
   color: #000000;  
 }
 
-.search-form-people {    
+.search-form-people {  
+  box-sizing: border-box;
+  padding-right: 35px;
+  padding-left: 35px;  
   margin: 0;
   font: inherit;
   font-size: 18px;
