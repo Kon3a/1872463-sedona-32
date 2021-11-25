@@ -1882,6 +1882,7 @@ margin-left: -2px;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;  
+  z-index: 1;
 } 
 
 .modal-close-button:hover {
@@ -1906,7 +1907,7 @@ margin-left: -2px;
   grid-template-columns: 155px 401px;
   grid-template-rows: 50px 40px;  
 }
-
+/*
 .field-group-data::after {  
   position: absolute;
   display: block;
@@ -1920,7 +1921,7 @@ margin-left: -2px;
   opacity: 30%;
   pointer-events: none;  
 }
-
+*/
 .search-type-data {
   font: inherit;
   font-size: 18px;
@@ -1938,13 +1939,35 @@ margin-left: -2px;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  width: 401px;  
+  width: 401px; 
+  height: 50px; 
   padding-left: 19px;
   background-color: #f2f2f2;   
   border-radius: 4px;
   border: none;  
   grid-column: 2/3;
   grid-row: 1/2; 
+}
+
+.search-form-date-wrapper {
+  width: 401px;
+  height: 50px;
+  position: relative;
+}
+
+.button-date {
+  position: absolute;
+  top: 18px;
+  right: 19px;
+  width: 16px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/date.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 30%;
+  cursor: pointer;  
 }
 
 .message {
@@ -2029,35 +2052,6 @@ margin-left: -2px;
 }
 
 /*  Кнопки Плюс - Минус */
-
-/*
-.wrapper-plus-minus-adults {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  align-self: center;
-  position: absolute;
-  top: -38px;
-  left: 0px;
-}
-
-.wrapper-plus-minus-child {
-  grid-column: 6/7;
-  grid-row: 2/3;
-  align-self: center;
-  position: absolute;
-  top: -38px;
-  left: 0px;
-}
-
-.wrapper-plus-minus-adults,
-.wrapper-plus-minus-child {
-  display: flex;
-  width: 99px;
-  justify-content: space-between;
-  margin-right:19px;
-  margin-left:19px;
-}
-*/
 
 .plus-minus-wrapper {
   width: 133px;

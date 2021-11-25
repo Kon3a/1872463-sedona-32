@@ -297,26 +297,32 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group-data">
               <label class="search-type-data" for="arrival-data">Дата заезда:</label>
+              <div class="search-form-date-wrapper">
               <input class="search-form-data" type="text" id="arrival-data" name="arrival-data" placeholder="27 апреля 2020 года">
+              <button class="button-date" type="button"><span class="visually-hidden">Укажите дату заезда в гостиницу</span></button>
+              </div>
               <span class="message message-error">Мы не можем отправить вас в прошлое</span>
             </div>            
             <div class="field-group-data">
-              <label class="search-type-data" for="departure-data">Дата выезда:</label>
-              <input class="search-form-data" type="text" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
+              <label class="search-type-data" for="departure-data">Дата выезда:</label>               
+              <div class="search-form-date-wrapper">
+                <input class="search-form-data" type="text" id="departure-data" name="departure-data" placeholder="1 сентября 2021 года">
+                <button class="button-date" type="button"><span class="visually-hidden">Укажите дату выезда из гостиницы</span></button>
+              </div>              
               <span class="message message-warning">На эти даты есть свободные номера. Пока есть</span>
             </div>            
             <div class="field-group-people">         
               <label class="search-type-people search-type-people-adults" for="people-adults">Взрослые:</label>
               <div class="plus-minus-wrapper">
                 <input class="search-form-people search-form-people-adults" type="text" id="people-adults" name="people-adults" placeholder="2">              
-                <button class="minus-adults" type="button"><span class="visually-hidden">Кнопка минус</span></button>
-                <button class="plus-adults" type="button"><span class="visually-hidden">Кнопка плюс</span></button>      
+                <button class="minus-adults" type="button"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
+                <button class="plus-adults" type="button"><span class="visually-hidden">Увеличить количество взрослых</span></button>      
               </div>
               <label class="search-type-people search-type-people-child" for="people-child">Дети:</label>
               <div class="plus-minus-wrapper">
                 <input class="search-form-people search-form-people-child" type="text" id="people-child" name="people-child" placeholder="1">
-                <button class="minus-child" type="button"><span class="visually-hidden">Кнопка минус</span></button>
-                <button class="plus-child" type="button"><span class="visually-hidden">Кнопка плюс</span></button> 
+                <button class="minus-child" type="button"><span class="visually-hidden">Уменьшить количество детей</span></button>
+                <button class="plus-child" type="button"><span class="visually-hidden">Увеличить количество детей</span></button> 
               </div>
               <div class="tooltip-info">
                 <span class="visually-hidden">Дополнительная информация</span>
@@ -332,5 +338,6 @@
         </section>
       </div>
     </div>
+    <!-- Модальное окно END-->
   </body>
 </html>
